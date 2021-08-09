@@ -1,0 +1,28 @@
+{
+  "name": "slot-template-audio-howler",
+  "version": "1.0.0",
+  "description": "template for howler audio for slot games",
+  "main": "makemyjson.js",
+  "scripts": {
+    "test": "node makemyjson.js",
+    "build-sounds": "node makeMyJSON_1.0.js",
+    "deploy": "node copyAudio.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igtinteractive/slot-template-audio-howler.git"
+  },
+  "keywords": [
+    "audio"
+  ],
+  "author": "jkr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igtinteractive/slot-template-audio-howler/issues"
+  },
+  "homepage": "https://github.com/igtinteractive/slot-template-audio-howler#readme",
+  "dependencies": {
+    "node-exiftool": "^2.3.0",
+    "sox": "^0.1.0"
+  }
+}

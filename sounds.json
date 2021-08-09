@@ -1,10 +1,6 @@
 {
-	/**
-	 * Sound Manifest
-	 */
     "soundManifest": [
         {
-			// Deferred Example Sound
             "id": "deferredExampleSound",
             "loadType": "A",
             "src": ["soundFiles/deferredExampleSound.ogg", "soundFiles/deferredExampleSound.aac"]
