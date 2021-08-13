@@ -32,17 +32,27 @@ async function processOriginalJson() {
     originalSpriteLists = (originalJson.get('soundDefinitions').spriteList || {});
 
     myNewSoundDefinitions.soundSprites = {};
-    myNewSoundDefinitions.spriteList = {};
+    myNewSoundDefinitions.spriteList = originalSpriteLists;
     myNewSoundDefinitions.commands = originalCommands;
     processSourceManifest();
     processSourceSprites();
 }
+function sortEntries(unordered) {
+    ordered = Object.keys(unordered).sort().reduce(
+        (obj, key) => {
+            obj[key] = unordered[key];
+            return obj;
+        },
+        {}
+    );
+    return ordered;
+}
 function finishProcessOrignalJson() {
     console.log("Writing File and exiting: " + JSONtarget);
-    myNewJson.soundManifest = myNewSoundManifest;
-    myNewSoundDefinitions.commands = originalCommands;
-    myNewSoundDefinitions.spriteList = myNewSpriteLists;
-    myNewSoundDefinitions.soundSprites = myNewSoundSprites;
+    myNewJson.soundManifest = sortEntries(myNewSoundManifest);
+    myNewSoundDefinitions.commands = sortEntries(originalCommands);
+    myNewSoundDefinitions.spriteList = sortEntries(myNewSpriteLists);
+    myNewSoundDefinitions.soundSprites = sortEntries(myNewSoundSprites);
     myNewJson.soundDefinitions = myNewSoundDefinitions;
     fs.writeFileSync(JSONtarget, formatJson(JSON.stringify(myNewJson)));
     process.exit(0);
@@ -108,10 +118,10 @@ function processSpriteList(element) {
         }
         for (let i = 0; i < spriteNames.length; i++) {
             if (i < (spriteNames.length - 1)) {
-                duration.push(startTime[i + 1] - startTime[i]);
+                duration.push(Math.round((startTime[i + 1] - startTime[i])*100)/100);
             }
             else {
-                duration.push(totalDuration - startTime[i]);
+                duration.push(Math.round((totalDuration - startTime[i])*100)/100);
             }
         }
         //build spritelist

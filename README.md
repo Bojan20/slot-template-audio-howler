@@ -20,10 +20,10 @@ Usage: please alter the settings.json to conform to the needs of your project.
 
 you can run two scripts in this folder:
 
-$yarn build-sounds
+yarn build-sounds
 This script will generate a new sounds.json file, based on the files found in "SourceSoundDirectory".  It will generate a new soundmanifest, sprites, and spritelists based on the files found, and will use additional settings found in JSONtemplate for sprites or spritelists, as well as keeping all the commands found in the template.  It will save the new sounds.json file to the "JSONtarget" location.  If you are happy with the newly generated file, you can rename it to the "JSONtemplate" name and it can be used for future invocations of the script.
 
-$yarn deploy
+yarn deploy
 To copy the audio files from this repo into your game repo, run "yarn deploy" in this folder.  The script reads in configuration params from the adjacent settings.json file so make sure and update those with the correct relative paths to your game project for your game.
 
 

@@ -600,6 +600,30 @@
                 ],
                 "type": "sequential",
                 "overlap": true
+            },
+            "sl_BonusBallPinHit": {
+                "items": [
+                    "s_BonusBassPinHit1.2",
+                    "s_BonusBassPinHit2",
+                    "s_BonusBassPinHit3",
+                    "s_BonusBassPinHit4",
+                    "s_BonusBassPinHit5",
+                    "s_BonusBassPinHit6"
+                ],
+                "type": "sequential",
+                "overlap": "false"
+            },
+            "sl_Reveal": {
+                "items": [
+                    "s_Reveal01",
+                    "s_Reveal02",
+                    "s_Reveal03",
+                    "s_Reveal04",
+                    "s_RevealWinningNumber1",
+                    "s_RevealWinningNumber2"
+                ],
+                "type": "xxx",
+                "overlap": "true"
             }
         },
         "commands": {
@@ -915,7 +939,7 @@
                 }
             ],
 
-            "onRollupWinTier1Start": [
+            "onRollupWinTier1Start": [ 
             ],
 
             "onBigWinStart": [
