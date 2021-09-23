@@ -49,7 +49,7 @@ function sortEntries(unordered) {
 }
 function finishProcessOrignalJson() {
     console.log("Writing File and exiting: " + JSONtarget);
-    myNewJson.soundManifest = sortEntries(myNewSoundManifest);
+    myNewJson.soundManifest = myNewSoundManifest;
     myNewSoundDefinitions.commands = sortEntries(originalCommands);
     myNewSoundDefinitions.spriteList = sortEntries(myNewSpriteLists);
     myNewSoundDefinitions.soundSprites = sortEntries(myNewSoundSprites);
