@@ -1,5 +1,10 @@
 {
+
     "soundManifest": [
+        {
+            "id": "TEST_Scale",
+            "src": ["soundFiles/TEST_Scale.ogg", "soundFiles/TEST_Scale.aac"]
+        },
         {
             "id": "deferredExampleSound",
             "loadType": "A",
@@ -186,6 +191,10 @@
             "src": ["soundFiles/UI_onUiClose.ogg", "soundFiles/UI_onUiClose.aac"]
         },
         {
+            "id": "UI_onUIClickSmall",
+            "src": ["soundFiles/UI_onUIClickSmall.ogg", "soundFiles/UI_onUIClickSmall.aac"]
+        },
+        {
             "id": "TEST_SingleMarimbaNotes",
             "src": ["soundFiles/TEST_SingleMarimbaNotes.ogg", "soundFiles/TEST_SingleMarimbaNotes.aac"]
         },
@@ -221,7 +230,7 @@
             "s_PL_CleoPlus_BigWinRollup": {
                 "soundId": "PL_CleoPlus_BigWinRollup",
                 "startTime": 1,
-                "duration": 9256,
+                "duration": 9255,
                 "tags": ["SoundEffects"]
             },
             "s_PL_CleoPlus_BigWinEnd": {
@@ -453,58 +462,60 @@
                 "overlap": true,
                 "tags": ["SoundEffects"]
             },
-            "s_UI_onUIBetDown": {
-                "soundId": "UI_onUIBetDown",
-                "startTime": 1,
-                "duration": 524,
-                "tags": ["SoundEffects"]
+            "s_UI_onUIBetDown": {"soundId": "UI_onUIBetDown","startTime": 1,"duration": 524,"overlap": true,"tags": ["SoundEffects"]
             },
             "s_UI_onUIBetMax": {
                 "soundId": "UI_onUIBetMax",
                 "startTime": 1,
-                "duration": 2877,
+                "duration": 2877,"overlap": true,
                 "tags": ["SoundEffects"]
             },
             "s_UI_onUIBetUp": {
                 "soundId": "UI_onUIBetUp",
                 "startTime": 1,
-                "duration": 57,
+                "duration": 57,"overlap": true,
                 "tags": ["SoundEffects"]
             },
             "s_UI_onUIClick": {
                 "soundId": "UI_onUIClick",
                 "startTime": 1,
-                "duration": 80,
+                "duration": 80,"overlap": true,
                 "tags": ["SoundEffects"]
             },
             "s_UI_onUIOpen": {
                 "soundId": "UI_onUIOpen",
                 "startTime": 1,
-                "duration": 319,
+                "duration": 319,"overlap": true,
 				"tags": ["SoundEffects"]
             },
             "s_UI_onUISelect": {
                 "soundId": "UI_onUISelect",
                 "startTime": 1,
-                "duration": 255,
+                "duration": 255,"overlap": true,
                 "tags": ["SoundEffects"]
             },
             "s_UI_onUISkip": {
                 "soundId": "UI_onUISkip",
                 "startTime": 1,
-                "duration": 1038,
+                "duration": 1038,"overlap": true,
                 "tags": ["SoundEffects"]
             },
             "s_UI_onUISpin": {
                 "soundId": "UI_onUISpin",
                 "startTime": 1,
-                "duration": 211,
+                "duration": 211,"overlap": true,
                 "tags": ["SoundEffects"]
             },
             "s_UI_onUIClose": {
                 "soundId": "UI_onUiClose",
                 "startTime": 1,
-                "duration": 529,
+                "duration": 529,"overlap": true,
+				"tags": ["SoundEffects"]
+            },
+            "s_UI_onUIClickSmall": {
+                "soundId": "UI_onUIClickSmall",
+                "startTime": 5,
+                "duration": 170,"overlap": true,
 				"tags": ["SoundEffects"]
             },
             "s_note1": {
@@ -545,6 +556,51 @@
                 "duration": 250,
                 "overlap": true,
                 "spriteId": "s_note5",
+                "tags": ["SoundEffects"]
+            },
+             "s_TEST_ScaleNote1_loop": {
+                "soundId": "TEST_Scale",
+                "startTime": 136,
+                "duration": 1153,
+                "loop": -1,
+                "overlap": false,
+                "spriteId": "s_TEST_ScaleNote1_loop",
+                "tags": ["SoundEffects"]
+            }, 
+            "s_TEST_ScaleNote2_loop": {
+                "soundId": "TEST_Scale",
+                "startTime": 1288,
+                "duration": 1153,
+                "loop": -1,
+                "overlap": false,
+                "spriteId": "s_TEST_ScaleNote2_loop",
+                "tags": ["SoundEffects"]
+            }, 
+            "s_TEST_ScaleNote3_loop": {
+                "soundId": "TEST_Scale",
+                "startTime": 2543,
+                "duration": 1153,
+                "loop": -1,
+                "overlap": false,
+                "spriteId": "s_TEST_ScaleNote3_loop",
+                "tags": ["SoundEffects"]
+            }, 
+            "s_TEST_ScaleNote4_loop": {
+                "soundId": "TEST_Scale",
+                "startTime": 3797,
+                "duration": 1153,
+                "loop": -1,
+                "overlap": false,
+                "spriteId": "s_TEST_ScaleNote4_loop",
+                "tags": ["SoundEffects"]
+            }, 
+            "s_TEST_ScaleNote5_loop": {
+                "soundId": "TEST_Scale",
+                "startTime": 5051,
+                "duration": 1153,
+                "loop": -1,
+                "overlap": false,
+                "spriteId": "s_TEST_ScaleNote5_loop",
                 "tags": ["SoundEffects"]
             }
         },
@@ -601,6 +657,7 @@
                 "type": "sequential",
                 "overlap": true
             },
+<<<<<<< Updated upstream
             "sl_BonusBallPinHit": {
                 "items": [
                     "s_BonusBassPinHit1.2",
@@ -624,10 +681,46 @@
                 ],
                 "type": "xxx",
                 "overlap": "true"
+=======
+            "Scale_Loop": {
+                "items": [
+                    "s_TEST_ScaleNote1_loop",
+                    "s_TEST_ScaleNote2_loop",
+                    "s_TEST_ScaleNote3_loop",
+                    "s_TEST_ScaleNote4_loop",
+                    "s_TEST_ScaleNote5_loop"
+                ],
+                "type": "sequential"
+>>>>>>> Stashed changes
             }
         },
         "commands": {
 
+            "onTutorialDoNotShowAgainOff": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIClick"
+                }
+            ],
+            "onTutorialDoNotShowAgainOn": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIClick"
+                }
+            ],
+            "onTutorialArrowLeft": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIClick"
+                }
+            ],
+
+            "onTutorialArrowRight": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIClick"
+                }
+            ],            
             "onTutorialClose": [
                 {
                     "command": "Play",
@@ -718,8 +811,7 @@
                     "command": "Play",
                     "spriteId": "s_TOF_ReelLand",
                     "volume": 1,
-                    "pan": -1.0,
-                    "delay": 215
+                    "pan": -1.0
 
                 }
             ],
@@ -728,8 +820,7 @@
                     "command": "Play",
                     "spriteId": "s_TOF_ReelLand",
                     "volume": 1,
-                    "pan": -0.5,
-                    "delay": 220
+                    "pan": -0.5
                 }
             ],
             "onReel3Land": [
@@ -737,8 +828,7 @@
                     "command": "Play",
                     "spriteId": "s_TOF_ReelLand",
                     "volume": 1,
-                    "pan": 0,
-                    "delay": 225
+                    "pan": 0
                 }
             ],
             "onReel4Land": [
@@ -746,8 +836,7 @@
                     "command": "Play",
                     "spriteId": "s_TOF_ReelLand",
                     "volume": 1,
-                    "pan": 0.5,
-                    "delay": 230
+                    "pan": 0.5
                 }
             ],
             "onReel5Land": [
@@ -755,8 +844,7 @@
                     "command": "Play",
                     "spriteId": "s_TOF_ReelLand",
                     "volume": 1,
-                    "pan": 1.0,
-                    "delay": 235
+                    "pan": 1.0
                 }
             ],
             "onBonusSymbolLand": [
@@ -969,6 +1057,7 @@
                     "spriteId": "s_PL_CleoPlus_BigWin",
                     "delay": 30,
                     "cancelDelay" : "true",
+                    "volume": 1,
                     "loop": -1
                 },
                 {
@@ -1267,6 +1356,16 @@
                     "commandId": "stopAudioOnSkipPressed"
                 }
             ],
+            "onUiSpinStop": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUISkip"
+                },
+                {
+                    "command": "Execute",
+                    "commandId": "stopAudioOnSkipPressed"
+                }
+            ],
 
 
             "onUiPaytableOpen": [
@@ -1317,6 +1416,68 @@
                     "spriteId": "s_UI_onUIBetMax"
                 }
             ],
+            "onUiSettingsOpen": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIOpen"
+                }
+            ],
+            "onUiSettingsSelect": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUISelect"
+                }
+            ],
+            "onUiSettingsClose": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIClose"
+                }
+            ],
+            "onUiSettingsPage": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIClose"
+                }
+            ],
+
+            "onUiSettingsAutoSpinInfoOpen": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIOpen"
+                }
+            ],
+            "onUiSettingsAutoSpinStart": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUISelect"
+                }
+            ],
+            "onUiSettingsAutoSpinInfoClose": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIClose"
+                }
+            ],
+            "onUiSettingsAutoSpinOptionsClose": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIClose"
+                }
+            ],            
+            "onUiSettingsAutoSpinOptionsOpen": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIOpen"
+                }
+            ],
+            "onUiSettingsAutoSpinReset": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUIOpen"
+                }
+            ],
+
             "onUiOptionsOpen": [
                 {
                     "command": "Play",
@@ -1347,6 +1508,12 @@
                     "spriteId": "s_UI_onUISelect"
                 }
             ],
+            "onUiAutoSpinStop": [
+                {
+                    "command": "Play",
+                    "spriteId": "s_UI_onUISelect"
+                }
+            ],
             "onUiAutoPlayClose": [
                 {
                     "command": "Play",
@@ -1365,7 +1532,7 @@
                     "spriteId": "s_UI_onUIClose"
                 }
             ],
-            "onUionUiCloseMessage": [
+            "onUiCloseMessage": [
                 {
                     "command": "Play",
                     "spriteId": "s_UI_onUIClose"
@@ -1377,221 +1544,11 @@
                     "spriteId": "s_UI_onUIClick"
                 }
             ],
-            "testPlayLoopingSprite": [
+
+            "onUiConfirmSmall": [
                 {
                     "command": "Play",
-                    "spriteId": "s_TOF_BaseGameMusicLoop",
-                    "loop": -1,
-                    "delay": 0
-                }
-            ],
-            "testFadeOutLoopingSprite": [
-                {
-                    "command": "Fade",
-                    "spriteId": "s_TOF_BaseGameMusicLoop",
-                    "volume": 0,
-                    "duration": 1000
-                }
-            ],
-            "testPauseLoopingSprite": [
-                {
-                    "command": "Pause",
-                    "spriteId": "s_TOF_BaseGameMusicLoop",
-                    "delay": 0
-                }
-            ],
-            "testResumeLoopingSprite": [
-                {
-                    "command": "Resume",
-                    "spriteId": "s_TOF_BaseGameMusicLoop",
-                    "delay": 0
-                }
-            ],
-            "testStopLoopingSprite": [
-                {
-                    "command": "Stop",
-                    "spriteId": "s_TOF_BaseGameMusicLoop",
-                    "delay": 0
-                }
-            ],
-            "testExecuteCommandStopLoopingSprite": [
-                {
-                    "command": "Execute",
-                    "commandId": "testStopLoopingSprite",
-                    "delay": 0
-                }
-            ],
-            "testNextSpriteInSpriteListOnClick_Sequential": [
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesSequential",
-                    "volume": 1,
-                    "loop": 0,
-                    "delay": 0
-                }
-            ],
-            "testNextSpriteInSpriteListOnClick_Random": [
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesRandom",
-                    "volume": 1,
-                    "loop": 0,
-                    "delay": 0
-                }
-            ],
-            "testSpriteOverlapWithItself": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_TOF_S03_snake"
-                }
-            ],
-            "testResetSpriteList": [
-                {
-                    "command": "ResetSpriteList",
-                    "spriteListId": "MarimbaNotesSequential"
-                },
-                {
-                    "command": "ResetSpriteList",
-                    "spriteListId": "MarimbaNotesRandom"
-                },
-                {
-                    "command": "ResetSpriteList",
-                    "spriteListId": "MarimbaNotesDifferentSequence"
-                }
-            ],
-            "testDelayedSpriteListElementsInOneCommand": [
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesSequential",
-                    "delay": 0
-                },
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesSequential",
-                    "delay": 500
-                },
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesSequential",
-                    "delay": 1000
-                },
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesSequential",
-                    "delay": 1500
-                },
-                {
-                    "command": "Execute",
-                    "commandId": "testResetSpriteList",
-                    "delay": 2000
-                }
-            ],
-            "testDelayedSpriteListElementsUsingExecuteOnCommandAbove": [
-                {
-                    "command": "Execute",
-                    "commandId": "testNextSpriteInSpriteListOnClick_Sequential",
-                    "delay": 0
-                },
-                {
-                    "command": "Execute",
-                    "commandId": "testNextSpriteInSpriteListOnClick_Sequential",
-                    "delay": 500
-                },
-                {
-                    "command": "Execute",
-                    "commandId": "testNextSpriteInSpriteListOnClick_Sequential",
-                    "delay": 1000
-                },
-                {
-                    "command": "Execute",
-                    "commandId": "testNextSpriteInSpriteListOnClick_Sequential",
-                    "delay": 1500
-                },
-                {
-                    "command": "Execute",
-                    "commandId": "testResetSpriteList",
-                    "delay": 2000
-                }
-            ],
-            "testDelayedSpriteListElements_AltSequence": [
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesDifferentSequence",
-                    "delay": 0
-                },
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesDifferentSequence",
-                    "delay": 500
-                },
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesDifferentSequence",
-                    "delay": 1000
-                },
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesDifferentSequence",
-                    "delay": 1500
-                },
-                {
-                    "command": "Execute",
-                    "commandId": "testResetSpriteList",
-                    "delay": 1600
-                }
-            ],
-            "testPlayBothAltSequenceInstruments": [
-                {
-                    "command": "Execute",
-                    "commandId": "testDelayedSpriteListElements_AltSequence",
-                    "delay": 0
-                },
-                {
-                    "command": "Execute",
-                    "commandId": "testDelayedSpriteListElements_AltSequenceLongerSamples",
-                    "delay": 0
-                },
-                {
-                    "command": "Execute",
-                    "commandId": "testResetSpriteList",
-                    "delay": 1600
-                }
-            ],
-            "testPanReelLandsFromLeftToRight": [
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesSequential",
-                    "delay": 0,
-                    "pan": -1
-                },
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesSequential",
-                    "delay": 500,
-                    "pan": -0.5
-                },
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesSequential",
-                    "delay": 1000,
-                    "pan": 0
-                },
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesSequential",
-                    "delay": 1500,
-                    "pan": 0.5
-                },
-                {
-                    "command": "Play",
-                    "spriteListId": "MarimbaNotesSequential",
-                    "delay": 2000,
-                    "pan": 1
-                },
-                {
-                    "command": "Execute",
-                    "commandId": "testResetSpriteList",
-                    "delay": 2100
+                    "spriteId": "s_UI_onUIClickSmall"
                 }
             ]
         }

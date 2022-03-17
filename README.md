@@ -1,5 +1,18 @@
-# slot-template-audio-howler
-Repository for Audio Team to place audio assets
+# playa-slot-template-audio
+
+Repository for Audio Team to place audio assets.
+Must be synced with the game repo in order for changes to be in a build. 
+Audio changes can be done directly in the game repo but should be synced with the audio repo for archiving purposes.
+
+AudioNamingConvention.xlsx included for reference.
+
+Replace "PlayaTemplate" with the game name for the file PlayaTemplate_AudioSpec.xlsx
+
+.json5 file is an alternative to the .json file if you want to add comments. The "makeMyJSON.sh" script does not support or generate a json5 file.
+
+sourceSoundFiles folder is only for the original .WAV audio files, use only for archiving the game once complete. Can include the individual sounds, sound sprites (SL_) with markers, or both.
+
+INFO ON HOW TO USE MAKE MY JSON 3.0:
 
 Script prerequisites:
 Yarn or Npm package manager (for these examples we use Yarn) https://yarnpkg.com/getting-started/install
@@ -25,6 +38,4 @@ This script will generate a new sounds.json file, based on the files found in "S
 
 yarn deploy
 To copy the audio files from this repo into your game repo, run "yarn deploy" in this folder.  The script reads in configuration params from the adjacent settings.json file so make sure and update those with the correct relative paths to your game project for your game.
-
-
 
