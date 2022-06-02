@@ -32,27 +32,29 @@ async function processOriginalJson() {
     originalSpriteLists = (originalJson.get('soundDefinitions').spriteList || {});
 
     myNewSoundDefinitions.soundSprites = {};
-    myNewSoundDefinitions.spriteList = originalSpriteLists;
+    myNewSoundDefinitions.spriteList = {};
     myNewSoundDefinitions.commands = originalCommands;
     processSourceManifest();
     processSourceSprites();
 }
-function sortEntries(unordered) {
-    ordered = Object.keys(unordered).sort().reduce(
+function finishProcessOrignalJson() {
+    console.log("Writing File and exiting: " + JSONtarget);
+    myNewJson.soundManifest = myNewSoundManifest;
+    myNewSoundDefinitions.commands = originalCommands;
+    myNewSoundDefinitions.spriteList = Object.keys(myNewSpriteLists).sort().reduce(
         (obj, key) => {
-            obj[key] = unordered[key];
+            obj[key] = myNewSpriteLists[key];
             return obj;
         },
         {}
     );
-    return ordered;
-}
-function finishProcessOrignalJson() {
-    console.log("Writing File and exiting: " + JSONtarget);
-    myNewJson.soundManifest = myNewSoundManifest;
-    myNewSoundDefinitions.commands = sortEntries(originalCommands);
-    myNewSoundDefinitions.spriteList = sortEntries(myNewSpriteLists);
-    myNewSoundDefinitions.soundSprites = sortEntries(myNewSoundSprites);
+    myNewSoundDefinitions.soundSprites = Object.keys(myNewSoundSprites).sort().reduce(
+        (obj, key) => {
+            obj[key] = myNewSoundSprites[key];
+            return obj;
+        },
+        {}
+    );
     myNewJson.soundDefinitions = myNewSoundDefinitions;
     fs.writeFileSync(JSONtarget, formatJson(JSON.stringify(myNewJson)));
     process.exit(0);
@@ -108,20 +110,22 @@ function processSpriteList(element) {
         */
         totalDuration = Math.round(results.sampleCount * 100000 / results.sampleRate) / 100;
         let mySpriteListData = await extractSpriteListData(SourceSoundDirectory + "/" + element);
-        for (let i = 0; i < mySpriteListData.TracksMarkersName.length; i++) {
-            if (mySpriteListData.TracksMarkersName[i].startsWith('Tempo:')) {
+        if (mySpriteListData.TracksMarkersName) {
+            for (let i = 0; i < mySpriteListData.TracksMarkersName.length; i++) {
+                if (mySpriteListData.TracksMarkersName[i].startsWith('Tempo:')) {
+                }
+                else {
+                    spriteNames.push(mySpriteListData.TracksMarkersName[i]);
+                    startTime.push(Math.round(mySpriteListData.TracksMarkersStartTime[i] * 100000 / results.sampleRate) / 100);
+                }
             }
-            else {
-                spriteNames.push(mySpriteListData.TracksMarkersName[i]);
-                startTime.push(Math.round(mySpriteListData.TracksMarkersStartTime[i] * 100000 / results.sampleRate) / 100);
-            }
-        }
-        for (let i = 0; i < spriteNames.length; i++) {
-            if (i < (spriteNames.length - 1)) {
-                duration.push(Math.round((startTime[i + 1] - startTime[i])*100)/100);
-            }
-            else {
-                duration.push(Math.round((totalDuration - startTime[i])*100)/100);
+            for (let i = 0; i < spriteNames.length; i++) {
+                if (i < (spriteNames.length - 1)) {
+                    duration.push(Math.round((startTime[i + 1] - startTime[i]) * 100) / 100);
+                }
+                else {
+                    duration.push(Math.round((totalDuration - startTime[i]) * 100) / 100);
+                }
             }
         }
         //build spritelist
@@ -141,11 +145,11 @@ function processSpriteList(element) {
         for (let i = 0; i < spriteNames.length; i++) {
             let entryName = "s_" + element;
             let myNewEntry = originalSprites[entryName] || {};
-            myNewEntry.duration = duration[i];
-            myNewEntry.startTime = startTime[i];
-            myNewEntry.soundId = soundId + '_SL';
             myNewEntry.spriteId = 's_' + spriteNames[i];
-            myNewEntry.tags = originalSprites[myNewEntry.spriteId] || ["SoundEffects"];
+            myNewEntry.soundId = soundId + '_SL';
+            myNewEntry.startTime = startTime[i];
+            myNewEntry.duration = duration[i];
+            myNewEntry.tags = originalSprites[myNewEntry.spriteId] ? originalSprites[myNewEntry.spriteId].tags || ["SoundEffects"] : ["SoundEffects"];
             myNewSoundSprites[myNewEntry.spriteId] = myNewEntry;
         }
 
@@ -185,6 +189,7 @@ async function processSourceSprites() {
                 myNewEntry.soundId = soundId;
                 myNewEntry.startTime = startTime;
                 myNewEntry.duration = duration;
+                myNewEntry.tags = originalSprites[entryName] ? originalSprites[entryName].tags || ["SoundEffects"] : ["SoundEffects"];
                 myNewSoundSprites[entryName] = myNewEntry;
                 soundProcessCount--;
                 if (soundProcessCount <= 0) {
@@ -210,8 +215,11 @@ async function extractSpriteListData(element) {
             mySpriteListData.TracksMarkersName = x.data[0].TracksMarkersName;
             mySpriteListData.TracksMarkersStartTime = x.data[0].TracksMarkersStartTime;
         }, console.error)
-        .then(() => ep.close())
         .then(() => console.log('Loaded metadata: ' + element))
+        .then(() => {
+           if (ep.isOpen)
+               ep.close();
+        })
         .catch(console.error);
     return mySpriteListData;
 }
