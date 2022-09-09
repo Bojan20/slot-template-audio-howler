@@ -181,6 +181,13 @@
                 {"command": "Play","spriteListId": "sl_SymbolB01Land"},
                 {"command": "ResetSpriteList","spriteListId": "sl_SymbolB01Land","delay": 3000}
             ],
+            "onSymbolB01Land1": [{"command": "Play","spriteId": "s_SymbolB01Land1"}],
+            "onSymbolB01Land2": [{"command": "Play","spriteId": "s_SymbolB01Land2"}],
+            "onSymbolB01Land3": [
+                {"command": "Play","spriteId": "s_SymbolB01Land3"},
+                {"command": "Stop","spriteId": "s_SymbolB01Anticipation"}
+                ],
+
            "onBonusSymbolWin": [
                 {"command": "Play","spriteId": "s_BonusSymbolWin"},
                 {"command": "Stop","spriteId": "s_BaseMusicLoop"}
