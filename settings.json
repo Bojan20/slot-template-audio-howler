@@ -2,6 +2,7 @@
     "gameProjectPath": "../texas-tea-game",
     "JSONtemplate": "sounds.json",
     "JSONtarget": "sounds-new.json",
+    "JSON2target": "sounds-audioSprite.json",
     "SourceSoundDirectory": "sourceSoundFiles",
     "DestinationSoundDirectory": "soundFiles"
 }
