@@ -15,7 +15,7 @@ const audioFiles = fs.readdirSync(sourceSndFiles).map(dir => sourceSndFiles + di
 console.log("audioFiles-->", audioFiles);
 
 var opts = {
-    output: outDir + 'soundsprites',
+    output: outDir + 'SlotTemplateAudioSprite_SL',
     format: 'howler2',
     logger: {
         debug: console.log,
