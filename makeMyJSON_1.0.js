@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 const fs = require("fs");
 const path = require("path");
 const util = require("util");
@@ -37,6 +38,7 @@ async function processOriginalJson() {
     processSourceManifest();
     processSourceSprites();
 }
+
 function finishProcessOrignalJson() {
     console.log("Writing File and exiting: " + JSONtarget);
     myNewJson.soundManifest = myNewSoundManifest;
@@ -45,20 +47,19 @@ function finishProcessOrignalJson() {
         (obj, key) => {
             obj[key] = myNewSpriteLists[key];
             return obj;
-        },
-        {}
+        }, {}
     );
     myNewSoundDefinitions.soundSprites = Object.keys(myNewSoundSprites).sort().reduce(
         (obj, key) => {
             obj[key] = myNewSoundSprites[key];
             return obj;
-        },
-        {}
+        }, {}
     );
     myNewJson.soundDefinitions = myNewSoundDefinitions;
     fs.writeFileSync(JSONtarget, formatJson(JSON.stringify(myNewJson)));
     process.exit(0);
 }
+
 function formatJson(input) {
     return input
         .replace(/]},/g, ']},\n')
@@ -70,6 +71,7 @@ function formatJson(input) {
         .replace(/"spriteList":/g, '\n"spriteList":\n')
         .replace(/"soundSprites":/g, '\n"soundSprites":\n')
 }
+
 function processSourceManifest() {
     console.log("creating manifest");
     fs.readdirSync(SourceSoundDirectory).forEach(element => {
@@ -79,16 +81,16 @@ function processSourceManifest() {
             let src = [];
             let entry = {};
             src.push(DestinationSoundDirectory + "/" + id + ".ogg");
-            src.push(DestinationSoundDirectory + "/" + id + ".aac");
+            src.push(DestinationSoundDirectory + "/" + id + ".m4a");
             entry.id = id;
             entry.src = src;
             myNewSoundManifest.push(entry);
-        }
-       else {
+        } else {
             console.log("problem with file " + element + " not ending with .wav");
-       }
+        }
     });
 }
+
 function processSpriteList(element) {
     let soundId = element.substring(0, element.length - 7);
     let duration = [];
@@ -97,7 +99,7 @@ function processSpriteList(element) {
     let totalDuration = 0;
     soundProcessCount++;
     console.log("Processcing spritelist " + soundProcessCount + " File: " + element);
-    sox.identify(SourceSoundDirectory + "/" + element, async function (err, results) {
+    sox.identify(SourceSoundDirectory + "/" + element, async function(err, results) {
         /* results looks like:
         {
             format: 'wav',
@@ -112,9 +114,7 @@ function processSpriteList(element) {
         let mySpriteListData = await extractSpriteListData(SourceSoundDirectory + "/" + element);
         if (mySpriteListData.TracksMarkersName) {
             for (let i = 0; i < mySpriteListData.TracksMarkersName.length; i++) {
-                if (mySpriteListData.TracksMarkersName[i].startsWith('Tempo:')) {
-                }
-                else {
+                if (mySpriteListData.TracksMarkersName[i].startsWith('Tempo:')) {} else {
                     spriteNames.push(mySpriteListData.TracksMarkersName[i]);
                     startTime.push(Math.round(mySpriteListData.TracksMarkersStartTime[i] * 100000 / results.sampleRate) / 100);
                 }
@@ -122,8 +122,7 @@ function processSpriteList(element) {
             for (let i = 0; i < spriteNames.length; i++) {
                 if (i < (spriteNames.length - 1)) {
                     duration.push(Math.round((startTime[i + 1] - startTime[i]) * 100) / 100);
-                }
-                else {
+                } else {
                     duration.push(Math.round((totalDuration - startTime[i]) * 100) / 100);
                 }
             }
@@ -165,8 +164,7 @@ async function processSourceSprites() {
     fs.readdirSync(SourceSoundDirectory).forEach(element => {
         if (element.endsWith("_SL.wav")) {
             processSpriteList(element);
-        }
-        else if (element.endsWith(".wav")) {
+        } else if (element.endsWith(".wav")) {
             let soundId = element.substring(0, element.length - 4);
             let entryName = "s_" + soundId;
             let myNewEntry = (originalSprites[entryName] || {});
@@ -174,7 +172,7 @@ async function processSourceSprites() {
             let startTime = 0;
             soundProcessCount++;
             console.log("Processing Sprite " + soundProcessCount + " File: " + element);
-            sox.identify(SourceSoundDirectory + '/' + element, function (err, results) {
+            sox.identify(SourceSoundDirectory + '/' + element, function(err, results) {
                 /* results looks like:
                 {
                   format: 'wav',
@@ -185,7 +183,7 @@ async function processSourceSprites() {
                   sampleRate: 44100,
                 }
                 */
-                duration = Math.round(results.sampleCount * 100000 / results.sampleRate)/100;
+                duration = Math.round(results.sampleCount * 100000 / results.sampleRate) / 100;
                 myNewEntry.soundId = soundId;
                 myNewEntry.startTime = startTime;
                 myNewEntry.duration = duration;
@@ -196,10 +194,9 @@ async function processSourceSprites() {
                     finishProcessOrignalJson();
                 }
             });
-            
 
-        }
-        else {
+
+        } else {
             console.log("problem with file " + element + " not ending with .wav, skipping");
         }
     });
@@ -207,7 +204,7 @@ async function processSourceSprites() {
 
 async function extractSpriteListData(element) {
     let mySpriteListData = {};
-   await ep
+    await ep
         .open()
         // display pid
         .then(() => ep.readMetadata(element, ['-s3']))
@@ -217,8 +214,8 @@ async function extractSpriteListData(element) {
         }, console.error)
         .then(() => console.log('Loaded metadata: ' + element))
         .then(() => {
-           if (ep.isOpen)
-               ep.close();
+            if (ep.isOpen)
+                ep.close();
         })
         .catch(console.error);
     return mySpriteListData;
@@ -226,7 +223,7 @@ async function extractSpriteListData(element) {
 
 function processSourceSounds() {
     fs.readdirSync(SourceSoundDirectory).forEach(element => {
-        sox.identify(SourceSoundDirectory + '/' + element, function (err, results) {
+        sox.identify(SourceSoundDirectory + '/' + element, function(err, results) {
             /* results looks like:
             {
               format: 'wav',
@@ -243,4 +240,3 @@ function processSourceSounds() {
 }
 
 processOriginalJson();
-

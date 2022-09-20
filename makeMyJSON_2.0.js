@@ -81,7 +81,7 @@ function processSourceManifest() {
             let src = [];
             let entry = {};
             src.push(DestinationSoundDirectory + "/" + id + ".ogg");
-            src.push(DestinationSoundDirectory + "/" + id + ".aac");
+            src.push(DestinationSoundDirectory + "/" + id + ".m4a");
             entry.id = id;
             entry.src = src;
             myNewSoundManifest.push(entry);
