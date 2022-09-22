@@ -1,9 +1,9 @@
-export default {
+{
   "src": [
-    "./dist/audioSprite/SlotTemplateAudioSprite_SL.ogg",
-    "./dist/audioSprite/SlotTemplateAudioSprite_SL.m4a",
-    "./dist/audioSprite/SlotTemplateAudioSprite_SL.aac",
-    "./dist/audioSprite/SlotTemplateAudioSprite_SL.wav"
+    "./soundFiles/audioSprite/SlotTemplateAudioSprite_SL.ogg",
+    "./soundFiles/audioSprite/SlotTemplateAudioSprite_SL.m4a",
+    "./soundFiles/audioSprite/SlotTemplateAudioSprite_SL.aac",
+    "./soundFiles/audioSprite/SlotTemplateAudioSprite_SL.wav"
   ],
   "sprite": {
     "BaseMusicLoop": [

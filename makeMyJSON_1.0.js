@@ -85,6 +85,7 @@ function processSourceManifest() {
             entry.id = id;
             entry.src = src;
             myNewSoundManifest.push(entry);
+            console.log("Processcing manifest entry " + entry.src + " File: " + entry.id);
         } else {
             console.log("problem with file " + element + " not ending with .wav");
         }

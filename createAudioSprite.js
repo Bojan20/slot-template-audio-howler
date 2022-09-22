@@ -5,7 +5,7 @@ const pathToFFmpeg = require('ffmpeg-static');
 console.log("pathToFFmpeg ->", pathToFFmpeg);
 
 const sourceSndFiles = './sourceSoundFiles/';
-const outDir = './dist/audioSprite/';
+const outDir = './soundFiles/audioSprite/';
 
 fs.mkdirSync(outDir, { recursive: true });
 
@@ -27,8 +27,8 @@ var opts = {
 audiosprite(pathToFFmpeg, audioFiles, opts, function(err, obj) {
     if (err) return console.error(err)
 
-    const dataText = 'export default ' + JSON.stringify(obj, null, 2);
-    fs.writeFile(outDir + "soundData.js", dataText, function(err) {
+    const dataText = JSON.stringify(obj, null, 2);
+    fs.writeFile(outDir + "soundData.json", dataText, function(err) {
         if (err) {
             throw err;
         }
