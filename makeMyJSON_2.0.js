@@ -15,6 +15,7 @@ const sndSpriteEntries = sndDataEntries.get("sprite");
 const JSONtemplate = audioSettings.get('JSON2template');
 const JSONtarget = audioSettings.get('JSON2target');
 const SourceSoundDirectory = audioSettings.get('SourceSoundDirectory');
+const DestinationSoundDirectory = audioSettings.get('DestinationSoundDirectory');
 const DestinationAudioSpriteDirectory = audioSettings.get('DestinationAudioSpriteDirectory');
 
 
@@ -88,8 +89,8 @@ function processSourceManifest() {
             let id = element.substring(0, element.length - 4);
             let src = [];
             let entry = {};
-            src.push(DestinationAudioSpriteDirectory + "/" + id + ".ogg");
-            src.push(DestinationAudioSpriteDirectory + "/" + id + ".m4a");
+            src.push(DestinationSoundDirectory + "/" + id + ".ogg");
+            src.push(DestinationSoundDirectory + "/" + id + ".m4a");
             entry.id = id;
             entry.src = src;
             myNewSoundManifest.push(entry);
