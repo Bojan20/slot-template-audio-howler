@@ -8,11 +8,20 @@ var sox = require('sox');
 const exiftool = require('node-exiftool')
 const ep = new exiftool.ExiftoolProcess();
 const settings = JSON.parse(fs.readFileSync("settings.json"));
+const sndData = JSON.parse(fs.readFileSync("soundFiles/audioSprite/soundData.json"));
 const audioSettings = new Map(Object.entries(settings || {}));
-const JSONtemplate = audioSettings.get('JSONtemplate');
-const JSONtarget = audioSettings.get('JSONtarget');
+const sndDataEntries = new Map(Object.entries(sndData || {}));
+const sndSpriteEntries = sndDataEntries.get("sprite");
+const JSONtemplate = audioSettings.get('JSON2template');
+const JSONtarget = audioSettings.get('JSON2target');
 const SourceSoundDirectory = audioSettings.get('SourceSoundDirectory');
 const DestinationSoundDirectory = audioSettings.get('DestinationSoundDirectory');
+const DestinationAudioSpriteDirectory = audioSettings.get('DestinationAudioSpriteDirectory');
+
+
+
+//const sndData = (fs.readFileSync('soundFiles/audioSprite/soundData.js'), "utf8");
+console.log(" sound Data file " + sndSpriteEntries.BaseMusicLoop[0]);
 
 let myNewJson = {};
 let myNewSoundDefinitions = {};
@@ -74,7 +83,7 @@ function formatJson(input) {
 
 function processSourceManifest() {
     console.log("creating manifest");
-    fs.readdirSync(SourceSoundDirectory).forEach(element => {
+    fs.readdirSync(DestinationAudioSpriteDirectory).forEach(element => {
         let myNewEntry = {};
         if (element.endsWith(".wav")) {
             let id = element.substring(0, element.length - 4);
@@ -85,7 +94,6 @@ function processSourceManifest() {
             entry.id = id;
             entry.src = src;
             myNewSoundManifest.push(entry);
-            console.log("Processcing manifest entry " + entry.src + " File: " + entry.id);
         } else {
             console.log("problem with file " + element + " not ending with .wav");
         }
@@ -186,7 +194,7 @@ async function processSourceSprites() {
                 */
                 duration = Math.round(results.sampleCount * 100000 / results.sampleRate) / 100;
                 myNewEntry.soundId = soundId;
-                myNewEntry.startTime = startTime;
+                myNewEntry.startTime = sndSpriteEntries[soundId][0];
                 myNewEntry.duration = duration;
                 myNewEntry.tags = originalSprites[entryName] ? originalSprites[entryName].tags || ["SoundEffects"] : ["SoundEffects"];
                 myNewSoundSprites[entryName] = myNewEntry;
