@@ -38,9 +38,9 @@ This script will generate a new sounds.json file, based on the files found in "S
 
 yarn deploy
 To copy the audio files from this repo into your game repo, run "yarn deploy" in this folder.  The script reads in configuration params from the adjacent settings.json file so make sure and update those with the correct relative paths to your game project for your game.
+# ------------------------------------------------------------------------------------------------
 
-
-Instructions to publish audioSprite files and sound.json file based on audioSprite audio files are following -
+Instructions to publish audioSprite audio files and audioSprite based sound.json file are as follows -
 
 Step 1 -   yarn build-audioSprite 
 This command will pick up all input sourceSoundFiles folder's wav files and combine them to create audioSprite with different soundFormats ogg, mp4, aac, wav. 
@@ -48,4 +48,5 @@ Along with it will also create soundData.json which has start and end time for e
 
 Step 2 - yarn build-sounds2
 This command will publish and create sounds-audioSprite.json file
+
 
