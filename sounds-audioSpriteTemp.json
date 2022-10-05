@@ -54,7 +54,7 @@
         },
 
         "spriteList": {
-            "sl_SymbolBonusLand": { "items": ["s_SymbolBonusLand1", "s_SymbolBonusLand2", "s_SymbolBonusLand3"], "type": "sequential", "overlap": true },
+            "sl_onBonusSymbolLand": { "items": ["s_SymbolBonusLand1", "s_SymbolBonusLand2", "s_SymbolBonusLand3"], "type": "sequential", "overlap": true },
             "sl_Preshow": { "items": ["s_Preshow1", "s_Preshow2", "s_Preshow3", "s_Preshow4", "s_Preshow5"], "type": "sequential", "overlap": true },
             "MarimbaNotesRandom": { "items": ["s_Preshow1", "s_Preshow2", "s_Preshow3", "s_Preshow4", "s_Preshow5"], "type": "random", "overlap": true },
             "MarimbaNotesDifferentSequence": { "items": ["s_Preshow5", "s_Preshow4", "s_Preshow3", "s_Preshow1"], "type": "sequential", "overlap": true },
@@ -89,10 +89,10 @@
             "onReel4Land": [{ "command": "Play", "spriteId": "s_ReelLand", "pan": 0.25 }],
             "onReel5Land": [{ "command": "Play", "spriteId": "s_ReelLand", "pan": 0.7 }],
             "onBonusSymbolLand": [
-                { "command": "Play", "spriteListId": "sl_SymbolBonusLand" },
+                { "command": "Play", "spriteListId": "sl_onBonusSymbolLand" },
                 { "command": "Execute", "commandId": "resetAnticipationSpritelists", "delay": 3000 }
             ],
-            "resetAnticipationSpritelists": [{ "command": "ResetSpriteList", "spriteListId": "sl_SymbolBonusLand" }],
+            "resetAnticipationSpritelists": [{ "command": "ResetSpriteList", "spriteListId": "sl_onBonusSymbolLand" }],
             "onBonusAnticipationStart": [{ "command": "Play", "spriteId": "s_SymbolBonusAnticipation" }],
             "onBonusAnticipationEnd": [
                 { "command": "Play", "spriteId": "s_SymbolBonusAnticipationEnd" },
