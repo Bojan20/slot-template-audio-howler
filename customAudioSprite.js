@@ -41,6 +41,9 @@ module.exports = function(ffmpegPath, files, opts, callback) {
         return callback(new Error('No input files specified.'))
     } else {
         files = _.flatten(files.map(file => glob.sync(file)));
+        files = files.filter(function(file) {
+            return file.endsWith(".wav") === true;
+        });
     }
 
     opts = _.extend({}, defaults, opts)
