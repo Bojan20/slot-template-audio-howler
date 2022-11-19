@@ -45,7 +45,8 @@
 {"id":"UiOpen","src":["soundFiles/UiOpen.ogg","soundFiles/UiOpen.m4a"]},
 {"id":"UiSelect","src":["soundFiles/UiSelect.ogg","soundFiles/UiSelect.m4a"]},
 {"id":"UiSkip","src":["soundFiles/UiSkip.ogg","soundFiles/UiSkip.m4a"]},
-{"id":"UiSpin","src":["soundFiles/UiSpin.ogg","soundFiles/UiSpin.m4a"]}],
+{"id":"UiSpin","src":["soundFiles/UiSpin.ogg","soundFiles/UiSpin.m4a"]},
+{"id":"onBonusSymbolLand_SL","src":["soundFiles/onBonusSymbolLand_SL.ogg","soundFiles/onBonusSymbolLand_SL.m4a"]}],
 
 "soundDefinitions":
 {
@@ -53,6 +54,12 @@
 {"s_BaseMusicLoop":{"soundId":"BaseMusicLoop","startTime":0,"duration":94627.89,"tags":["Music"]},
 "s_BigWinLoop":{"soundId":"BigWinLoop","startTime":0,"duration":17742.72,"tags":["Music"]},
 "s_BigWinLoopEnd":{"soundId":"BigWinLoopEnd","startTime":0,"duration":2218.34,"tags":["Music"]},
+"s_BonusBassPinHit1.2":{"spriteId":"s_BonusBassPinHit1.2","soundId":"onBonusSymbolLand_SL","startTime":0,"duration":499.95,"tags":["SoundEffects"]},
+"s_BonusBassPinHit2":{"spriteId":"s_BonusBassPinHit2","soundId":"onBonusSymbolLand_SL","startTime":499.95,"duration":593,"tags":["SoundEffects"]},
+"s_BonusBassPinHit3":{"spriteId":"s_BonusBassPinHit3","soundId":"onBonusSymbolLand_SL","startTime":1092.95,"duration":538.8,"tags":["SoundEffects"]},
+"s_BonusBassPinHit4":{"spriteId":"s_BonusBassPinHit4","soundId":"onBonusSymbolLand_SL","startTime":1631.75,"duration":407.57,"tags":["SoundEffects"]},
+"s_BonusBassPinHit5":{"spriteId":"s_BonusBassPinHit5","soundId":"onBonusSymbolLand_SL","startTime":2039.32,"duration":520.07,"tags":["SoundEffects"]},
+"s_BonusBassPinHit6":{"spriteId":"s_BonusBassPinHit6","soundId":"onBonusSymbolLand_SL","startTime":2559.39,"duration":518.12,"tags":["SoundEffects"]},
 "s_BonusMusicLoop":{"soundId":"BonusMusicLoop","startTime":0,"duration":57856.94,"tags":["Music"]},
 "s_BonusMusicLoopEnd":{"soundId":"BonusMusicLoopEnd","startTime":0,"duration":12685.26,"tags":["Music"]},
 "s_BonusSymbolWin":{"soundId":"BonusSymbolWin","startTime":0,"duration":3000,"overlap":true,"tags":["SoundEffects"]},
@@ -98,7 +105,7 @@
 "s_UiSpin":{"soundId":"UiSpin","startTime":0,"duration":468.34,"overlap":true,"tags":["SoundEffects"]}},
 
 "spriteList":
-{},
+{"sl_onBonusSymbolLand":{"items":["s_BonusBassPinHit1.2","s_BonusBassPinHit2","s_BonusBassPinHit3","s_BonusBassPinHit4","s_BonusBassPinHit5","s_BonusBassPinHit6"],"type":"random","overlap":"true"}},
 
 "commands":
 {"onBaseGameSpinStart":[{"command":"Play","spriteId":"s_BaseMusicLoop","volume":1,"loop":-1},{"command":"Stop","spriteId":"s_BigWinLoop"},{"command":"Execute","commandId":"onInactivityStart","delay":4000}],
