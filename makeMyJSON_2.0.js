@@ -101,7 +101,9 @@ function processSourceManifest() {
 }
 
 function processSpriteList(element) {
-    let soundId = element.substring(0, element.length - 7);
+    let srcPath = sndDataEntries.get("src")[0];
+    let srcWords = srcPath.split("/");
+    let soundId = srcWords[3].substring(0, srcWords[3].length - 4);
     let duration = [];
     let startTime = [];
     let spriteNames = [];
@@ -154,7 +156,7 @@ function processSpriteList(element) {
             let entryName = "s_" + element;
             let myNewEntry = originalSprites[entryName] || {};
             myNewEntry.spriteId = 's_' + spriteNames[i];
-            myNewEntry.soundId = soundId + '_SL';
+            myNewEntry.soundId = soundId;
             myNewEntry.startTime = startTime[i];
             myNewEntry.duration = duration[i];
             myNewEntry.tags = originalSprites[myNewEntry.spriteId] ? originalSprites[myNewEntry.spriteId].tags || ["SoundEffects"] : ["SoundEffects"];
