@@ -21,7 +21,7 @@ const DestinationAudioSpriteDirectory = audioSettings.get('DestinationAudioSprit
 
 
 //const sndData = (fs.readFileSync('soundFiles/audioSprite/soundData.js'), "utf8");
-console.log(" sound Data file " + sndSpriteEntries.BaseMusicLoop[0]);
+//console.log(" sound Data file " + sndSpriteEntries.BaseMusicLoop[0]);
 
 let myNewJson = {};
 let myNewSoundDefinitions = {};
@@ -174,13 +174,16 @@ async function processSourceSprites() {
         if (element.endsWith("_SL.wav")) {
             processSpriteList(element);
         } else if (element.endsWith(".wav")) {
-            let soundId = element.substring(0, element.length - 4);
-            let entryName = "s_" + soundId;
+            let spriteId = element.substring(0, element.length - 4);
+            let srcPath = sndDataEntries.get("src")[0];
+            let srcWords = srcPath.split("/");
+            let soundId = srcWords[3].substring(0, srcWords[3].length - 4);
+            let entryName = "s_" + spriteId;
             let myNewEntry = (originalSprites[entryName] || {});
             let duration = 0;
             let startTime = 0;
             soundProcessCount++;
-            console.log("Processing Sprite " + soundProcessCount + " File: " + element);
+            console.log("Processing Sprite " + spriteId);
             sox.identify(SourceSoundDirectory + '/' + element, function(err, results) {
                 /* results looks like:
                 {
@@ -193,8 +196,9 @@ async function processSourceSprites() {
                 }
                 */
                 duration = Math.round(results.sampleCount * 100000 / results.sampleRate) / 100;
+                myNewEntry.spriteId = spriteId;
                 myNewEntry.soundId = soundId;
-                myNewEntry.startTime = sndSpriteEntries[soundId][0];
+                myNewEntry.startTime = sndSpriteEntries[spriteId][0];
                 myNewEntry.duration = duration;
                 myNewEntry.tags = originalSprites[entryName] ? originalSprites[entryName].tags || ["SoundEffects"] : ["SoundEffects"];
                 myNewSoundSprites[entryName] = myNewEntry;
