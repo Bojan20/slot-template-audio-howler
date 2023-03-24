@@ -52,12 +52,13 @@ function finishProcessOrignalJson() {
     console.log("Writing File and exiting: " + JSONtarget);
     myNewJson.soundManifest = myNewSoundManifest;
     myNewSoundDefinitions.commands = originalCommands;
-    myNewSoundDefinitions.spriteList = Object.keys(myNewSpriteLists).sort().reduce(
+    myNewSoundDefinitions.spriteList = originalSpriteLists; // Allow temp spritelists to be copied over to exported sounds-audioSprite.json.
+    /*myNewSoundDefinitions.spriteList = Object.keys(myNewSpriteLists).sort().reduce(
         (obj, key) => {
             obj[key] = myNewSpriteLists[key];
             return obj;
         }, {}
-    );
+    );*/
     myNewSoundDefinitions.soundSprites = Object.keys(myNewSoundSprites).sort().reduce(
         (obj, key) => {
             obj[key] = myNewSoundSprites[key];
