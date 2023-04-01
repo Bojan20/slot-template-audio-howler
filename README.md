@@ -8,7 +8,7 @@ AudioNamingConvention.xlsx included for reference.
 
 Replace "PlayaTemplate" with the game name for the file PlayaTemplate_AudioSpec.xlsx
 
-.json5 file is an alternative to the .json file if you want to add comments. The "makeMyJSON.sh" script does not support or generate a json5 file.
+.json5 files are no longer supported. Please do not use json5
 
 sourceSoundFiles folder is only for the original .WAV audio files, use only for archiving the game once complete. Can include the individual sounds, sound sprites (SL_) with markers, or both.
 
