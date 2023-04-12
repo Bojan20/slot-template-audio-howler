@@ -4,8 +4,8 @@ const pathToFFmpeg = require('ffmpeg-static');
 
 console.log("pathToFFmpeg ->", pathToFFmpeg);
 
-const sourceSndFiles = './sourceSoundFiles/';
-const outDir = './soundFiles/audioSprite/';
+const sourceSndFiles = '././sourceSoundFiles/';
+const outDir = '././soundFiles/audioSprite/';
 
 fs.mkdirSync(outDir, { recursive: true });
 
