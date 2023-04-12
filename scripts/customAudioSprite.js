@@ -7,7 +7,7 @@ const glob = require('glob');
 const defaults = {
     output: 'output',
     path: '',
-    export: 'ogg,m4a,aac,wav',
+    export: 'm4a',
     format: null,
     autoplay: null,
     loop: [],
