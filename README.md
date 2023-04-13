@@ -33,7 +33,7 @@ Usage: please alter the settings.json to conform to the needs of your project.
 
 you can run two scripts in this folder:
 
-yarn build-sounds
+yarn build-audio
 This script will generate a new sounds.json file, based on the files found in "SourceSoundDirectory".  It will generate a new soundmanifest, sprites, and spritelists based on the files found, and will use additional settings found in JSONtemplate for sprites or spritelists, as well as keeping all the commands found in the template.  It will save the new sounds.json file to the "JSONtarget" location.  If you are happy with the newly generated file, you can rename it to the "JSONtemplate" name and it can be used for future invocations of the script.
 
 yarn deploy
@@ -42,11 +42,14 @@ To copy the audio files from this repo into your game repo, run "yarn deploy" in
 
 Instructions to publish audioSprite audio files and audioSprite based sound.json file are as follows -
 
-Step 1 -   yarn build-audioSprite 
-This command will pick up all input sourceSoundFiles folder's wav files and combine them to create audioSprite with different soundFormats ogg, mp4, aac, wav. 
-Along with it will also create soundData.json which has start and end time for each sprite.
+yarn build-audioSprite 
 
-Step 2 - yarn build-sounds2
-This command will publish and create sounds-audioSprite.json file
+This command will pick up all input sourceSoundFiles folder's wav files and combine them to create audioSprite with different possible soundFormats ogg, mp4, aac, wav. Currently its set to publish m4a audioSprites. This file get exported and published to 'dist -> soundFiles -> SlotTemplateAudioSprite_SL.m4a'
+
+Along with it will also create soundData.json which has start and end time for each sprite.
+Then it will generate sounds.json file based on soundData.json and sounds.json (source file at root level)
+After this step soundData.json is auto deleted.
+
+Sound Engineer can copy soundFiles folder and sounds.json file from dist folder and directly copy paste this into the game. 
 
 
