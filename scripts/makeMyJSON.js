@@ -110,7 +110,7 @@ function processSourceManifest() {
             let src = [];
             let entry = {};
             src.push(exportSoundsDirectoryName + "/" + id + ".ogg");
-            src.push(exportSoundsDirectoryName + "/" + id + ".m4a");
+            src.push(exportSoundsDirectoryName + "/" + id + ".aac");
             entry.id = id;
             entry.src = src;
             myNewSoundManifest.push(entry);
