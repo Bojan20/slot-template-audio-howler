@@ -22,9 +22,9 @@ if (audioProcess.process === "audioSprite") {
     sndDataEntries = new Map(Object.entries(sndData || {}));
     sndSpriteEntries = sndDataEntries.get("sprite");
 
-    //JSONtemplate = audioSettings.get('JSON2template');
-    //JSONtarget = audioSettings.get('JSON2target');
-
+} else if (audioProcess.process === "audio") {
+    fs.rmSync("././dist/soundFiles/", { recursive: true });
+    fs.rmSync("././dist/sounds.json", { recursive: true })
 }
 
 const SourceSoundDirectory = audioSettings.get('SourceSoundDirectory');
