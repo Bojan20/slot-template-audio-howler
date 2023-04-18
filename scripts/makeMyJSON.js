@@ -23,8 +23,8 @@ if (audioProcess.process === "audioSprite") {
     sndSpriteEntries = sndDataEntries.get("sprite");
 
 } else if (audioProcess.process === "audio") {
-    fs.rmSync("././dist/soundFiles/", { recursive: true });
-    fs.rmSync("././dist/sounds.json", { recursive: true })
+    //fs.rmSync("././dist/soundFiles/", { recursive: true });
+    //fs.rmSync("././dist/sounds.json", { recursive: true })
 }
 
 const SourceSoundDirectory = audioSettings.get('SourceSoundDirectory');

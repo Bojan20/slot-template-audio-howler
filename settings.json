@@ -1,5 +1,5 @@
 {
-    "gameProjectPath": "../texas-tea-game",
+    "gameProjectPath": "../slot-template-game",
     "JSONtemplate": "sounds.json",
     "JSONtarget": "dist/sounds.json",
     "JSON2template":"sounds-audioSpriteTemplate.json",

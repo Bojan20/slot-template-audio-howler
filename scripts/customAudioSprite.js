@@ -7,7 +7,7 @@ const glob = require('glob');
 const defaults = {
     output: 'output',
     path: '',
-    export: 'm4a',
+    export: 'ogg,aac',
     format: null,
     autoplay: null,
     loop: [],
@@ -29,13 +29,14 @@ const defaults = {
 }
 
 module.exports = function(ffmpegPath, files, opts, callback) {
-    // let opts = {}, callback = function(){}
-    // if (arguments.length === 2) {
-    //   callback = arguments[1]
-    // } else if (arguments.length >= 3) {
-    //   opts = arguments[1]
-    //   callback = arguments[2]
-    // }
+    /*let opts = {}, callback = function(){}
+  
+    if (arguments.length === 2) {
+      callback = arguments[1]
+    } else if (arguments.length >= 3) {
+      opts = arguments[1]
+      callback = arguments[2]
+    }*/
 
     if (!files || !files.length) {
         return callback(new Error('No input files specified.'))
@@ -191,13 +192,13 @@ module.exports = function(ffmpegPath, files, opts, callback) {
 
     function exportFile(src, dest, ext, opt, store, cb) {
         var outfile = dest + '.' + ext;
-        const cmd = ['-y', '-ar', opts.samplerate, '-ac', opts.channels, '-f', 's16le', '-i', src]
-            .concat(opt).concat(outfile);
-        spawn(ffmpegPath, cmd)
+
+        spawn(ffmpegPath, ['-y', '-ar', opts.samplerate, '-ac', opts.channels, '-f', 's16le', '-i', src]
+                .concat(opt).concat(outfile))
             .on('exit', function(code, signal) {
                 if (code) {
                     return cb({
-                        msg: 'Error exporting file: ' + cmd.join(' '),
+                        msg: 'Error exporting file',
                         format: ext,
                         retcode: code,
                         signal: signal
@@ -230,7 +231,7 @@ module.exports = function(ffmpegPath, files, opts, callback) {
             .on('exit', function(code, signal) {
                 if (code) {
                     return cb({
-                        msg: 'Error exporting file 2',
+                        msg: 'Error exporting file',
                         format: 'caf',
                         retcode: code,
                         signal: signal
@@ -316,7 +317,7 @@ module.exports = function(ffmpegPath, files, opts, callback) {
                 exportFile(tempFile, opts.output, ext, formats[ext], true, cb)
             }, function(err) {
                 if (err) {
-                    return callback(new Error('Error exporting file 3 '))
+                    return callback(new Error('Error exporting file'))
                 }
                 if (opts.autoplay) {
                     json.autoplay = opts.autoplay

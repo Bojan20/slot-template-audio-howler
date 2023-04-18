@@ -4,6 +4,10 @@ const pathToFFmpeg = require('ffmpeg-static');
 
 console.log("pathToFFmpeg ->", pathToFFmpeg);
 
+const settings = JSON.parse(fs.readFileSync("settings.json"));
+const audioSettings = new Map(Object.entries(settings || {}));
+const gameProjectPath = audioSettings.get('gameProjectPath');
+
 const distDir = '././dist';
 
 const sourceSndFiles = '././sourceSoundFiles/';
@@ -18,9 +22,13 @@ const audioFiles = fs.readdirSync(sourceSndFiles).map(dir => sourceSndFiles + di
 
 console.log("audioFiles-->", audioFiles);
 
+const pathArray = gameProjectPath.split("/");
+const gameName = pathArray[pathArray.length - 1];
+
 var opts = {
-    output: outDir + 'SlotTemplateAudioSprite_SL',
+    output: outDir + gameName + "_audioSprite",
     format: 'howler2',
+    export: 'm4a',
     logger: {
         debug: console.log,
         info: console.log,
