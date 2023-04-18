@@ -9,7 +9,10 @@ const distDir = '././dist/soundFiles/';
 const sourceSndFiles = '././sourceSoundFiles/';
 const outDir = '././dist/soundFiles/';
 
-fs.rmdirSync(distDir, { recursive: true })
+if (fs.existsSync(distDir) === true) {
+    fs.rmdirSync(distDir, { recursive: true });
+}
+
 
 fs.mkdirSync(outDir, { recursive: true });
 

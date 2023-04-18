@@ -5,7 +5,7 @@
   "main": "makemyjson.js",
   "scripts": {
     "test": "node makemyjson.js",
-    "build-audio": "node scripts/makeMyJSON.js audio && node scripts/convertAudio.js",
+    "build-audio": "node scripts/convertAudio.js && node scripts/makeMyJSON.js audio",
     "build-audioSprite": "node scripts/createAudioSprite.js audioSprite && node scripts/makeMyJSON.js audioSprite" ,
     "deploy": "node scripts/copyAudio.js"
   },
