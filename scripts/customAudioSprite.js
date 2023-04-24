@@ -18,7 +18,7 @@ const defaults = {
     vbr: -1,
     'vbr:vorbis': -1,
     samplerate: 44100,
-    channels: 1,
+    channels: 2,
     rawparts: '',
     ignorerounding: 0,
     logger: {
