@@ -246,13 +246,14 @@ async function processSourceSprites() {
                 }
                 */
                 duration = Math.round(results.sampleCount * 100000 / results.sampleRate) / 100;
-                myNewEntry.soundId = soundId;
+                myNewEntry.soundId = soundId;                
                 if (audioProcess.process === "audio") {
+                    myNewEntry.spriteId = soundId;
                     myNewEntry.startTime = startTime;
-                } else {
-                    myNewEntry.spriteId = spriteId;
+                } else {            
+                    myNewEntry.spriteId = spriteId;        
                     myNewEntry.startTime = sndSpriteEntries[spriteId][0];
-                }
+                }                
                 myNewEntry.duration = duration;
                 myNewEntry.tags = originalSprites[entryName] ? originalSprites[entryName].tags || ["SoundEffects"] : ["SoundEffects"];
                 myNewSoundSprites[entryName] = myNewEntry;
