@@ -248,7 +248,7 @@ async function processSourceSprites() {
                 duration = Math.round(results.sampleCount * 100000 / results.sampleRate) / 100;
                 myNewEntry.soundId = soundId;                
                 if (audioProcess.process === "audio") {
-                    myNewEntry.spriteId = soundId;
+                    myNewEntry.spriteId = "s_"+ soundId;
                     myNewEntry.startTime = startTime;
                 } else {            
                     myNewEntry.spriteId = spriteId;        
