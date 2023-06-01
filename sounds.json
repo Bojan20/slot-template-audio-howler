@@ -121,6 +121,7 @@
 "onBigWinTier3":[{"command":"Play","spriteId":"s_BigWinTier3"}],
 "onBigWinTier4":[{"command":"Play","spriteId":"s_BigWinTier4"}],
 "onBigWinTier5":[{"command":"Play","spriteId":"s_BigWinTier5"}],
+
 "onBigWinEnd":[{"command":"Play","spriteId":"s_BigWinEnd"},{"command":"Stop","spriteId":"s_BigWinStart","cancelDelay":"true"},{"command":"Fade","spriteId":"s_BaseMusicLoop","volume":1,"duration":500},{"command":"Fade","spriteId":"s_BonusMusicLoop","volume":1,"duration":500}],
 "onPayline":[{"command":"Play","spriteId":"s_Payline"}],
 "onReel1Land":[{"command":"Play","spriteId":"s_ReelLand","pan":-0.75}],

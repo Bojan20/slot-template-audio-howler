@@ -42,6 +42,10 @@ To copy the audio files from this repo into your game repo, run "yarn deploy" in
 
 Instructions to publish audioSprite audio files and audioSprite based sound.json file are as follows -
 
+yarn build-audio
+
+old style 
+
 yarn build-audioSprite 
 
 This command will pick up all input sourceSoundFiles folder's wav files and combine them to create audioSprite with different possible soundFormats ogg, mp4, aac, wav. Currently its set to publish m4a audioSprites. This file get exported and published to 'dist -> soundFiles -> SlotTemplateAudioSprite_SL.m4a'
