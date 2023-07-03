@@ -1,10 +1,10 @@
 {
-    "gameProjectPath": "../playa-slot-template-standard-game",
-    "JSONtemplate": "sounds.json",
-    "JSONtarget": "dist/sounds.json",
-    "JSON2template":"sounds-audioSpriteTemplate.json",
-    "JSON2target": "dist/sounds.json",
-    "SourceSoundDirectory": "sourceSoundFiles",
-    "DestinationSoundDirectory": "dist",
-    "DestinationAudioSpriteDirectory": "dist/soundFiles"
+	"gameProjectPath": "../prosperity-link-wan-shi-ru-yi-game",
+	"JSONtemplate": "sounds.json",
+	"JSONtarget": "dist/sounds.json",
+	"JSON2template": "sounds-audioSpriteTemplate.json",
+	"JSON2target": "dist/sounds.json",
+	"SourceSoundDirectory": "sourceSoundFiles",
+	"DestinationSoundDirectory": "dist",
+	"DestinationAudioSpriteDirectory": "dist/soundFiles"
 }
