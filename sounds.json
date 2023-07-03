@@ -1,1311 +1,259 @@
 {
-    "soundManifest": [
-        {
-            "id": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-            "src": ["soundFiles/prosperity-link-wan-shi-ru-yi-game_audioSprite.m4a"]
-        }
-    ],
+"soundManifest":
+[{"id":"playa-slot-template-standard-game_audioSprite","src":["soundFiles/playa-slot-template-standard-game_audioSprite.m4a"]}],
 
-    "soundDefinitions": {
-        "soundSprites": {
-            "s_AnticipationF01End": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "AnticipationF01End",
-                "startTime": 0,
-                "duration": 1548.59,
-                "tags": ["SoundEffects"]
-            },
-            "s_BaseMusicLoop": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 3000,
-                "duration": 175862.06,
-                "tags": ["Music"],
-                "spriteId": "BaseMusicLoop"
-            },
-            "s_BaseToBonusStart": {
-                "spriteId": "BaseToBonusStart",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 180000,
-                "duration": 985.78,
-                "tags": ["SoundEffects"]
-            },
-            "s_BigWinEnd": {
-                "spriteId": "BigWinEnd",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 182000,
-                "duration": 2535.22,
-                "tags": ["SoundEffects"]
-            },
-            "s_BigWinStart": {
-                "spriteId": "BigWinStart",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 186000,
-                "duration": 27042.24,
-                "tags": ["SoundEffects"]
-            },
-            "s_BigWinTier1": {
-                "spriteId": "BigWinTier1",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 215000,
-                "duration": 27042.24,
-                "tags": ["SoundEffects"]
-            },
-            "s_BigWinTier2": {
-                "spriteId": "BigWinTier2",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 244000,
-                "duration": 27042.27,
-                "tags": ["SoundEffects"]
-            },
-            "s_BigWinTier3": {
-                "spriteId": "BigWinTier3",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 273000,
-                "duration": 27042.24,
-                "tags": ["SoundEffects"]
-            },
-            "s_BigWinTier4": {
-                "spriteId": "BigWinTier4",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 302000,
-                "duration": 27042.24,
-                "tags": ["SoundEffects"]
-            },
-            "s_BigWinTier5": {
-                "spriteId": "BigWinTier5",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 331000,
-                "duration": 672.88,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusGameSpinEnd": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "BonusGameSpinEnd",
-                "startTime": 333000,
-                "duration": 918.16,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusGameSpinStart": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "BonusGameSpinStart",
-                "startTime": 335000,
-                "duration": 932.49,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusMusicLoop": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 337000,
-                "duration": 96338,
-                "tags": ["Music"],
-                "spriteId": "BonusMusicLoop"
-            },
-            "s_BonusMusicLoopEnd": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 435000,
-                "duration": 4225.35,
-                "tags": ["Music"],
-                "spriteId": "BonusMusicLoopEnd"
-            },
-            "s_BonusRetrigger": {
-                "spriteId": "BonusRetrigger",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 441000,
-                "duration": 1061.61,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusRollup2End": {
-                "spriteId": "BonusRollup2End",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 444000,
-                "duration": 1156.64,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusRollup2Start": {
-                "spriteId": "BonusRollup2Start",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 447000,
-                "duration": 1263.02,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusRollupEnd": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "BonusRollupEnd",
-                "startTime": 450000,
-                "duration": 1978,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusRollupStart": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "BonusRollupStart",
-                "startTime": 453000,
-                "duration": 96338,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSpinEnd": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "BonusSpinEnd",
-                "startTime": 551000,
-                "duration": 975.71,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSpinStart": {
-                "spriteId": "BonusSpinStart",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 553000,
-                "duration": 978.1,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS01": {
-                "spriteId": "BonusSymbolS01",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 555000,
-                "duration": 1462.13,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS02": {
-                "spriteId": "BonusSymbolS02",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 558000,
-                "duration": 1516.21,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS03": {
-                "spriteId": "BonusSymbolS03",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 561000,
-                "duration": 1691.47,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS04": {
-                "spriteId": "BonusSymbolS04",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 564000,
-                "duration": 1556.21,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS05": {
-                "spriteId": "BonusSymbolS05",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 567000,
-                "duration": 1605.87,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS06": {
-                "spriteId": "BonusSymbolS06",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 570000,
-                "duration": 1600,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS07": {
-                "spriteId": "BonusSymbolS07",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 573000,
-                "duration": 1592.18,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS08": {
-                "spriteId": "BonusSymbolS08",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 576000,
-                "duration": 1462.45,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS09": {
-                "spriteId": "BonusSymbolS09",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 579000,
-                "duration": 1517.17,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS10": {
-                "spriteId": "BonusSymbolS10",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 582000,
-                "duration": 1186.67,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS11": {
-                "spriteId": "BonusSymbolS11",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 585000,
-                "duration": 1299.34,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS12": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "BonusSymbolS12",
-                "startTime": 588000,
-                "duration": 2000.36,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS13": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "BonusSymbolS13",
-                "startTime": 592000,
-                "duration": 1994.31,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS14": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "BonusSymbolS14",
-                "startTime": 595000,
-                "duration": 1994.72,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolS15": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "BonusSymbolS15",
-                "startTime": 598000,
-                "duration": 2034.97,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolW01": {
-                "spriteId": "BonusSymbolW01",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 602000,
-                "duration": 1782.31,
-                "tags": ["SoundEffects"]
-            },
-            "s_BonusSymbolWin": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 605000,
-                "duration": 973.27,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "BonusSymbolWin"
-            },
-            "s_BonusToBaseStart": {
-                "spriteId": "BonusToBaseStart",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 607000,
-                "duration": 1006.12,
-                "tags": ["SoundEffects"]
-            },
-            "s_GameInit": {
-                "spriteId": "GameInit",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 610000,
-                "duration": 460.57,
-                "tags": ["SoundEffects"]
-            },
-            "s_InactivityStart": {
-                "spriteId": "InactivityStart",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 612000,
-                "duration": 974.26,
-                "tags": ["SoundEffects"]
-            },
-            "s_IntroStart": {
-                "spriteId": "IntroStart",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 614000,
-                "duration": 670.98,
-                "tags": ["SoundEffects"]
-            },
-            "s_Payline": {
-                "spriteId": "Payline",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 616000,
-                "duration": 576.92,
-                "tags": ["SoundEffects"]
-            },
-            "s_PickerMusicLoop": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 618000,
-                "duration": 11020.61,
-                "tags": ["SoundEffects"],
-                "spriteId": "PickerMusicLoop"
-            },
-            "s_PickerSelect": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 631000,
-                "duration": 590.63,
-                "tags": ["SoundEffects"],
-                "spriteId": "PickerSelect"
-            },
-            "s_PickerStart": {
-                "spriteId": "PickerStart",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 633000,
-                "duration": 680.98,
-                "tags": ["SoundEffects"]
-            },
-            "s_PreBonusLoop": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "PreBonusLoop",
-                "startTime": 635000,
-                "duration": 15000,
-                "tags": ["SoundEffects"]
-            },
-            "s_ReelLand": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 651000,
-                "duration": 186.3,
-                "tags": ["SoundEffects"],
-                "spriteId": "ReelLand"
-            },
-            "s_ReelLand1": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "ReelLand1",
-                "startTime": 653000,
-                "duration": 312.49,
-                "tags": ["SoundEffects"]
-            },
-            "s_ReelLand2": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "ReelLand2",
-                "startTime": 655000,
-                "duration": 312.49,
-                "tags": ["SoundEffects"]
-            },
-            "s_ReelLand3": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "ReelLand3",
-                "startTime": 657000,
-                "duration": 312.49,
-                "tags": ["SoundEffects"]
-            },
-            "s_ReelLand4": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "ReelLand4",
-                "startTime": 659000,
-                "duration": 312.49,
-                "tags": ["SoundEffects"]
-            },
-            "s_ReelLand5": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "ReelLand5",
-                "startTime": 661000,
-                "duration": 312.49,
-                "tags": ["SoundEffects"]
-            },
-            "s_Rollup1": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "Rollup1",
-                "startTime": 663000,
-                "duration": 175862.06,
-                "tags": ["SoundEffects"]
-            },
-            "s_Rollup1End": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "Rollup1End",
-                "startTime": 840000,
-                "duration": 1810.34,
-                "tags": ["SoundEffects"]
-            },
-            "s_Rollup2End": {
-                "spriteId": "Rollup2End",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 843000,
-                "duration": 898.46,
-                "tags": ["SoundEffects"]
-            },
-            "s_Rollup2Start": {
-                "spriteId": "Rollup2Start",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 845000,
-                "duration": 993.06,
-                "tags": ["SoundEffects"]
-            },
-            "s_RollupLow": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 847000,
-                "duration": 597.44,
-                "tags": ["SoundEffects"],
-                "spriteId": "RollupLow"
-            },
-            "s_ScreenShake": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "ScreenShake",
-                "startTime": 849000,
-                "duration": 2222.99,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolB01": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 853000,
-                "duration": 1246.67,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolB01"
-            },
-            "s_SymbolB01Anticipation": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 856000,
-                "duration": 8357.57,
-                "tags": ["SoundEffects"],
-                "overlap": true,
-                "spriteId": "SymbolB01Anticipation"
-            },
-            "s_SymbolB01AnticipationEnd": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 866000,
-                "duration": 1197.78,
-                "tags": ["SoundEffects"],
-                "overlap": true,
-                "spriteId": "SymbolB01AnticipationEnd"
-            },
-            "s_SymbolB01AnticipationMiss": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "SymbolB01AnticipationMiss",
-                "startTime": 869000,
-                "duration": 1624.99,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolB01Land1": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 872000,
-                "duration": 1500,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolB01Land1"
-            },
-            "s_SymbolB01Land2": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 875000,
-                "duration": 1500,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolB01Land2"
-            },
-            "s_SymbolB01Land3": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 878000,
-                "duration": 1500,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolB01Land3"
-            },
-            "s_SymbolF01": {
-                "spriteId": "SymbolF01",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 881000,
-                "duration": 1209.23,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolF01Anticipation": {
-                "spriteId": "SymbolF01Anticipation",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 884000,
-                "duration": 1418.78,
-                "overlap": true,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolF01AnticipationEnd": {
-                "spriteId": "SymbolF01AnticipationEnd",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 887000,
-                "duration": 1806.19,
-                "overlap": true,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolPreshow1": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 890000,
-                "duration": 179.95,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolPreshow1"
-            },
-            "s_SymbolPreshow2": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "SymbolPreshow2",
-                "startTime": 892000,
-                "duration": 185.87,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolPreshow3": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "SymbolPreshow3",
-                "startTime": 894000,
-                "duration": 162.7,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolPreshow4": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "SymbolPreshow4",
-                "startTime": 896000,
-                "duration": 185.94,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolPreshow5": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "SymbolPreshow5",
-                "startTime": 898000,
-                "duration": 186.1,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolS01": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 900000,
-                "duration": 844.83,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS01"
-            },
-            "s_SymbolS02": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 902000,
-                "duration": 796.64,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS02"
-            },
-            "s_SymbolS03": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 904000,
-                "duration": 763.29,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS03"
-            },
-            "s_SymbolS04": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 906000,
-                "duration": 759.02,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS04"
-            },
-            "s_SymbolS05": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 908000,
-                "duration": 813.04,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS05"
-            },
-            "s_SymbolS06": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 910000,
-                "duration": 760.05,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS06"
-            },
-            "s_SymbolS07": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 912000,
-                "duration": 768.05,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS07"
-            },
-            "s_SymbolS08": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 914000,
-                "duration": 718.98,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS08"
-            },
-            "s_SymbolS09": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 916000,
-                "duration": 873.11,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS09"
-            },
-            "s_SymbolS10": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 918000,
-                "duration": 553.06,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS10"
-            },
-            "s_SymbolS11": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 920000,
-                "duration": 604.24,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolS11"
-            },
-            "s_SymbolS12": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "SymbolS12",
-                "startTime": 922000,
-                "duration": 1077.39,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolS13": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "SymbolS13",
-                "startTime": 925000,
-                "duration": 1268.96,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolS14": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "SymbolS14",
-                "startTime": 928000,
-                "duration": 1332.81,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolS15": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "spriteId": "SymbolS15",
-                "startTime": 931000,
-                "duration": 1268.96,
-                "tags": ["SoundEffects"]
-            },
-            "s_SymbolW01": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 934000,
-                "duration": 969.93,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolW01"
-            },
-            "s_SymbolW01Transform": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 936000,
-                "duration": 1085.71,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "SymbolW01Transform"
-            },
-            "s_UiBetDown": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 939000,
-                "duration": 524.65,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "UiBetDown"
-            },
-            "s_UiBetMax": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 941000,
-                "duration": 2877.64,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "UiBetMax"
-            },
-            "s_UiBetUp": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 945000,
-                "duration": 482.27,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "UiBetUp"
-            },
-            "s_UiClick": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 947000,
-                "duration": 350,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "UiClick"
-            },
-            "s_UiClickSmall": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 949000,
-                "duration": 186.33,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "UiClickSmall"
-            },
-            "s_UiClose": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 951000,
-                "duration": 650,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "UiClose"
-            },
-            "s_UiLeft": {
-                "spriteId": "UiLeft",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 953000,
-                "duration": 1101.13,
-                "tags": ["SoundEffects"]
-            },
-            "s_UiOff": {
-                "spriteId": "UiOff",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 956000,
-                "duration": 725.87,
-                "tags": ["SoundEffects"]
-            },
-            "s_UiOn": {
-                "spriteId": "UiOn",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 958000,
-                "duration": 709.46,
-                "tags": ["SoundEffects"]
-            },
-            "s_UiOpen": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 960000,
-                "duration": 484.2,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "UiOpen"
-            },
-            "s_UiRight": {
-                "spriteId": "UiRight",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 962000,
-                "duration": 993.11,
-                "tags": ["SoundEffects"]
-            },
-            "s_UiSelect": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 964000,
-                "duration": 474.76,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "UiSelect"
-            },
-            "s_UiSkip": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 966000,
-                "duration": 495.96,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "UiSkip"
-            },
-            "s_UiSpin": {
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 968000,
-                "duration": 468.34,
-                "overlap": true,
-                "tags": ["SoundEffects"],
-                "spriteId": "UiSpin"
-            },
-            "s_UiSpinSlam": {
-                "spriteId": "UiSpinSlam",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 970000,
-                "duration": 1017.6,
-                "tags": ["SoundEffects"]
-            },
-            "s_UiStart": {
-                "spriteId": "UiStart",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 973000,
-                "duration": 652.11,
-                "tags": ["SoundEffects"]
-            },
-            "s_UiStop": {
-                "spriteId": "UiStop",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 975000,
-                "duration": 505.62,
-                "tags": ["SoundEffects"]
-            },
-            "s_UiTutorialClose": {
-                "spriteId": "UiTutorialClose",
-                "soundId": "prosperity-link-wan-shi-ru-yi-game_audioSprite",
-                "startTime": 977000,
-                "duration": 600.59,
-                "tags": ["SoundEffects"]
-            }
-        },
+"soundDefinitions":
+{
+"soundSprites":
+{"s_AnticipationF01End":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"AnticipationF01End","startTime":0,"duration":1548.59,"tags":["SoundEffects"]},
+"s_BaseGameStart":{"spriteId":"BaseGameStart","soundId":"playa-slot-template-standard-game_audioSprite","startTime":3000,"duration":809.32,"tags":["SoundEffects"]},
+"s_BaseMusicLoop":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":5000,"duration":101538.46,"tags":["Music"],"spriteId":"BaseMusicLoop"},
+"s_BaseSpinEnd":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"BaseSpinEnd","startTime":108000,"duration":840.93,"tags":["SoundEffects"]},
+"s_BaseSpinStart":{"spriteId":"BaseSpinStart","soundId":"playa-slot-template-standard-game_audioSprite","startTime":110000,"duration":819.34,"tags":["SoundEffects"]},
+"s_BaseToBonusStart":{"spriteId":"BaseToBonusStart","soundId":"playa-slot-template-standard-game_audioSprite","startTime":112000,"duration":985.78,"tags":["SoundEffects"]},
+"s_BigWinEnd":{"spriteId":"BigWinEnd","soundId":"playa-slot-template-standard-game_audioSprite","startTime":114000,"duration":4218.73,"tags":["SoundEffects"]},
+"s_BigWinStart":{"spriteId":"BigWinStart","soundId":"playa-slot-template-standard-game_audioSprite","startTime":120000,"duration":15000,"tags":["SoundEffects"]},
+"s_BigWinTier1":{"spriteId":"BigWinTier1","soundId":"playa-slot-template-standard-game_audioSprite","startTime":136000,"duration":709.14,"tags":["SoundEffects"]},
+"s_BigWinTier2":{"spriteId":"BigWinTier2","soundId":"playa-slot-template-standard-game_audioSprite","startTime":138000,"duration":674.22,"tags":["SoundEffects"]},
+"s_BigWinTier3":{"spriteId":"BigWinTier3","soundId":"playa-slot-template-standard-game_audioSprite","startTime":140000,"duration":623.7,"tags":["SoundEffects"]},
+"s_BigWinTier4":{"spriteId":"BigWinTier4","soundId":"playa-slot-template-standard-game_audioSprite","startTime":142000,"duration":678.05,"tags":["SoundEffects"]},
+"s_BigWinTier5":{"spriteId":"BigWinTier5","soundId":"playa-slot-template-standard-game_audioSprite","startTime":144000,"duration":672.88,"tags":["SoundEffects"]},
+"s_BonusGameSpinEnd":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"BonusGameSpinEnd","startTime":146000,"duration":918.16,"tags":["SoundEffects"]},
+"s_BonusGameSpinStart":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"BonusGameSpinStart","startTime":148000,"duration":932.49,"tags":["SoundEffects"]},
+"s_BonusMusicLoop":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":150000,"duration":37500,"tags":["Music"],"spriteId":"BonusMusicLoop"},
+"s_BonusMusicLoopEnd":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":189000,"duration":13125.9,"tags":["Music"],"spriteId":"BonusMusicLoopEnd"},
+"s_BonusRetrigger":{"spriteId":"BonusRetrigger","soundId":"playa-slot-template-standard-game_audioSprite","startTime":204000,"duration":1061.61,"tags":["SoundEffects"]},
+"s_BonusRollup2End":{"spriteId":"BonusRollup2End","soundId":"playa-slot-template-standard-game_audioSprite","startTime":207000,"duration":1156.64,"tags":["SoundEffects"]},
+"s_BonusRollup2Start":{"spriteId":"BonusRollup2Start","soundId":"playa-slot-template-standard-game_audioSprite","startTime":210000,"duration":1263.02,"tags":["SoundEffects"]},
+"s_BonusRollupEnd":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"BonusRollupEnd","startTime":213000,"duration":2716.69,"tags":["SoundEffects"]},
+"s_BonusRollupStart":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"BonusRollupStart","startTime":217000,"duration":7500,"tags":["SoundEffects"]},
+"s_BonusSpinEnd":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"BonusSpinEnd","startTime":226000,"duration":975.71,"tags":["SoundEffects"]},
+"s_BonusSpinStart":{"spriteId":"BonusSpinStart","soundId":"playa-slot-template-standard-game_audioSprite","startTime":228000,"duration":978.1,"tags":["SoundEffects"]},
+"s_BonusSymbolS01":{"spriteId":"BonusSymbolS01","soundId":"playa-slot-template-standard-game_audioSprite","startTime":230000,"duration":1462.13,"tags":["SoundEffects"]},
+"s_BonusSymbolS02":{"spriteId":"BonusSymbolS02","soundId":"playa-slot-template-standard-game_audioSprite","startTime":233000,"duration":1516.21,"tags":["SoundEffects"]},
+"s_BonusSymbolS03":{"spriteId":"BonusSymbolS03","soundId":"playa-slot-template-standard-game_audioSprite","startTime":236000,"duration":1691.47,"tags":["SoundEffects"]},
+"s_BonusSymbolS04":{"spriteId":"BonusSymbolS04","soundId":"playa-slot-template-standard-game_audioSprite","startTime":239000,"duration":1556.21,"tags":["SoundEffects"]},
+"s_BonusSymbolS05":{"spriteId":"BonusSymbolS05","soundId":"playa-slot-template-standard-game_audioSprite","startTime":242000,"duration":1605.87,"tags":["SoundEffects"]},
+"s_BonusSymbolS06":{"spriteId":"BonusSymbolS06","soundId":"playa-slot-template-standard-game_audioSprite","startTime":245000,"duration":1600,"tags":["SoundEffects"]},
+"s_BonusSymbolS07":{"spriteId":"BonusSymbolS07","soundId":"playa-slot-template-standard-game_audioSprite","startTime":248000,"duration":1592.18,"tags":["SoundEffects"]},
+"s_BonusSymbolS08":{"spriteId":"BonusSymbolS08","soundId":"playa-slot-template-standard-game_audioSprite","startTime":251000,"duration":1462.45,"tags":["SoundEffects"]},
+"s_BonusSymbolS09":{"spriteId":"BonusSymbolS09","soundId":"playa-slot-template-standard-game_audioSprite","startTime":254000,"duration":1517.17,"tags":["SoundEffects"]},
+"s_BonusSymbolS10":{"spriteId":"BonusSymbolS10","soundId":"playa-slot-template-standard-game_audioSprite","startTime":257000,"duration":1186.67,"tags":["SoundEffects"]},
+"s_BonusSymbolS11":{"spriteId":"BonusSymbolS11","soundId":"playa-slot-template-standard-game_audioSprite","startTime":260000,"duration":1299.34,"tags":["SoundEffects"]},
+"s_BonusSymbolS12":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"BonusSymbolS12","startTime":263000,"duration":2000.36,"tags":["SoundEffects"]},
+"s_BonusSymbolS13":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"BonusSymbolS13","startTime":267000,"duration":1994.31,"tags":["SoundEffects"]},
+"s_BonusSymbolS14":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"BonusSymbolS14","startTime":270000,"duration":1994.72,"tags":["SoundEffects"]},
+"s_BonusSymbolS15":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"BonusSymbolS15","startTime":273000,"duration":2034.97,"tags":["SoundEffects"]},
+"s_BonusSymbolW01":{"spriteId":"BonusSymbolW01","soundId":"playa-slot-template-standard-game_audioSprite","startTime":277000,"duration":1782.31,"tags":["SoundEffects"]},
+"s_BonusSymbolWin":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":280000,"duration":973.27,"overlap":true,"tags":["SoundEffects"],"spriteId":"BonusSymbolWin"},
+"s_BonusToBaseStart":{"spriteId":"BonusToBaseStart","soundId":"playa-slot-template-standard-game_audioSprite","startTime":282000,"duration":1006.12,"tags":["SoundEffects"]},
+"s_GameInit":{"spriteId":"GameInit","soundId":"playa-slot-template-standard-game_audioSprite","startTime":285000,"duration":460.57,"tags":["SoundEffects"]},
+"s_InactivityStart":{"spriteId":"InactivityStart","soundId":"playa-slot-template-standard-game_audioSprite","startTime":287000,"duration":974.26,"tags":["SoundEffects"]},
+"s_IntroStart":{"spriteId":"IntroStart","soundId":"playa-slot-template-standard-game_audioSprite","startTime":289000,"duration":670.98,"tags":["SoundEffects"]},
+"s_Payline":{"spriteId":"Payline","soundId":"playa-slot-template-standard-game_audioSprite","startTime":291000,"duration":576.92,"tags":["SoundEffects"]},
+"s_PickerMusicLoop":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":293000,"duration":11020.61,"tags":["SoundEffects"],"spriteId":"PickerMusicLoop"},
+"s_PickerSelect":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":306000,"duration":590.63,"tags":["SoundEffects"],"spriteId":"PickerSelect"},
+"s_PickerStart":{"spriteId":"PickerStart","soundId":"playa-slot-template-standard-game_audioSprite","startTime":308000,"duration":680.98,"tags":["SoundEffects"]},
+"s_PreBonusLoop":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"PreBonusLoop","startTime":310000,"duration":15000,"tags":["SoundEffects"]},
+"s_ReelLand":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":326000,"duration":186.3,"tags":["SoundEffects"],"spriteId":"ReelLand"},
+"s_Rollup1":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"Rollup1","startTime":328000,"duration":2755.1,"tags":["SoundEffects"]},
+"s_Rollup1End":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"Rollup1End","startTime":332000,"duration":2755.1,"tags":["SoundEffects"]},
+"s_Rollup2End":{"spriteId":"Rollup2End","soundId":"playa-slot-template-standard-game_audioSprite","startTime":336000,"duration":898.46,"tags":["SoundEffects"]},
+"s_Rollup2Start":{"spriteId":"Rollup2Start","soundId":"playa-slot-template-standard-game_audioSprite","startTime":338000,"duration":993.06,"tags":["SoundEffects"]},
+"s_RollupLow":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":340000,"duration":597.44,"tags":["SoundEffects"],"spriteId":"RollupLow"},
+"s_ScreenShake":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"ScreenShake","startTime":342000,"duration":2222.99,"tags":["SoundEffects"]},
+"s_SymbolB01":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":346000,"duration":1246.67,"tags":["SoundEffects"],"spriteId":"SymbolB01"},
+"s_SymbolB01Anticipation":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":349000,"duration":6078.73,"tags":["SoundEffects"],"overlap":true,"spriteId":"SymbolB01Anticipation"},
+"s_SymbolB01AnticipationEnd":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":357000,"duration":1197.78,"tags":["SoundEffects"],"overlap":true,"spriteId":"SymbolB01AnticipationEnd"},
+"s_SymbolB01Land1":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":360000,"duration":2974.54,"tags":["SoundEffects"],"spriteId":"SymbolB01Land1"},
+"s_SymbolB01Land2":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":364000,"duration":3070.7,"tags":["SoundEffects"],"spriteId":"SymbolB01Land2"},
+"s_SymbolB01Land3":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":369000,"duration":3108.84,"tags":["SoundEffects"],"spriteId":"SymbolB01Land3"},
+"s_SymbolF01":{"spriteId":"SymbolF01","soundId":"playa-slot-template-standard-game_audioSprite","startTime":374000,"duration":1209.23,"tags":["SoundEffects"]},
+"s_SymbolF01Anticipation":{"spriteId":"SymbolF01Anticipation","soundId":"playa-slot-template-standard-game_audioSprite","startTime":377000,"duration":1418.78,"overlap":true,"tags":["SoundEffects"]},
+"s_SymbolF01AnticipationEnd":{"spriteId":"SymbolF01AnticipationEnd","soundId":"playa-slot-template-standard-game_audioSprite","startTime":380000,"duration":1806.19,"overlap":true,"tags":["SoundEffects"]},
+"s_SymbolPreshow1":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":383000,"duration":179.95,"tags":["SoundEffects"],"spriteId":"SymbolPreshow1"},
+"s_SymbolPreshow2":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"SymbolPreshow2","startTime":385000,"duration":185.87,"tags":["SoundEffects"]},
+"s_SymbolPreshow3":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"SymbolPreshow3","startTime":387000,"duration":162.7,"tags":["SoundEffects"]},
+"s_SymbolPreshow4":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"SymbolPreshow4","startTime":389000,"duration":185.94,"tags":["SoundEffects"]},
+"s_SymbolPreshow5":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"SymbolPreshow5","startTime":391000,"duration":186.1,"tags":["SoundEffects"]},
+"s_SymbolS01":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":393000,"duration":844.83,"tags":["SoundEffects"],"spriteId":"SymbolS01"},
+"s_SymbolS02":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":395000,"duration":796.64,"tags":["SoundEffects"],"spriteId":"SymbolS02"},
+"s_SymbolS03":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":397000,"duration":763.29,"tags":["SoundEffects"],"spriteId":"SymbolS03"},
+"s_SymbolS04":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":399000,"duration":759.02,"tags":["SoundEffects"],"spriteId":"SymbolS04"},
+"s_SymbolS05":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":401000,"duration":813.04,"tags":["SoundEffects"],"spriteId":"SymbolS05"},
+"s_SymbolS06":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":403000,"duration":760.05,"tags":["SoundEffects"],"spriteId":"SymbolS06"},
+"s_SymbolS07":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":405000,"duration":768.05,"tags":["SoundEffects"],"spriteId":"SymbolS07"},
+"s_SymbolS08":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":407000,"duration":718.98,"tags":["SoundEffects"],"spriteId":"SymbolS08"},
+"s_SymbolS09":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":409000,"duration":873.11,"tags":["SoundEffects"],"spriteId":"SymbolS09"},
+"s_SymbolS10":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":411000,"duration":553.06,"tags":["SoundEffects"],"spriteId":"SymbolS10"},
+"s_SymbolS11":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":413000,"duration":604.24,"tags":["SoundEffects"],"spriteId":"SymbolS11"},
+"s_SymbolS12":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"SymbolS12","startTime":415000,"duration":1077.39,"tags":["SoundEffects"]},
+"s_SymbolS13":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"SymbolS13","startTime":418000,"duration":1268.96,"tags":["SoundEffects"]},
+"s_SymbolS14":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"SymbolS14","startTime":421000,"duration":1332.81,"tags":["SoundEffects"]},
+"s_SymbolS15":{"soundId":"playa-slot-template-standard-game_audioSprite","spriteId":"SymbolS15","startTime":424000,"duration":1268.96,"tags":["SoundEffects"]},
+"s_SymbolW01":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":427000,"duration":969.93,"overlap":true,"tags":["SoundEffects"],"spriteId":"SymbolW01"},
+"s_SymbolW01Transform":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":429000,"duration":1085.71,"overlap":true,"tags":["SoundEffects"],"spriteId":"SymbolW01Transform"},
+"s_UiBetDown":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":432000,"duration":524.65,"overlap":true,"tags":["SoundEffects"],"spriteId":"UiBetDown"},
+"s_UiBetMax":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":434000,"duration":2877.64,"overlap":true,"tags":["SoundEffects"],"spriteId":"UiBetMax"},
+"s_UiBetUp":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":438000,"duration":482.27,"overlap":true,"tags":["SoundEffects"],"spriteId":"UiBetUp"},
+"s_UiClick":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":440000,"duration":350,"overlap":true,"tags":["SoundEffects"],"spriteId":"UiClick"},
+"s_UiClickSmall":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":442000,"duration":186.33,"overlap":true,"tags":["SoundEffects"],"spriteId":"UiClickSmall"},
+"s_UiClose":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":444000,"duration":650,"overlap":true,"tags":["SoundEffects"],"spriteId":"UiClose"},
+"s_UiLeft":{"spriteId":"UiLeft","soundId":"playa-slot-template-standard-game_audioSprite","startTime":446000,"duration":1101.13,"tags":["SoundEffects"]},
+"s_UiOff":{"spriteId":"UiOff","soundId":"playa-slot-template-standard-game_audioSprite","startTime":449000,"duration":725.87,"tags":["SoundEffects"]},
+"s_UiOn":{"spriteId":"UiOn","soundId":"playa-slot-template-standard-game_audioSprite","startTime":451000,"duration":709.46,"tags":["SoundEffects"]},
+"s_UiOpen":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":453000,"duration":484.2,"overlap":true,"tags":["SoundEffects"],"spriteId":"UiOpen"},
+"s_UiRight":{"spriteId":"UiRight","soundId":"playa-slot-template-standard-game_audioSprite","startTime":455000,"duration":993.11,"tags":["SoundEffects"]},
+"s_UiSelect":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":457000,"duration":474.76,"overlap":true,"tags":["SoundEffects"],"spriteId":"UiSelect"},
+"s_UiSkip":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":459000,"duration":495.96,"overlap":true,"tags":["SoundEffects"],"spriteId":"UiSkip"},
+"s_UiSpin":{"soundId":"playa-slot-template-standard-game_audioSprite","startTime":461000,"duration":468.34,"overlap":true,"tags":["SoundEffects"],"spriteId":"UiSpin"},
+"s_UiSpinSlam":{"spriteId":"UiSpinSlam","soundId":"playa-slot-template-standard-game_audioSprite","startTime":463000,"duration":1017.6,"tags":["SoundEffects"]},
+"s_UiStart":{"spriteId":"UiStart","soundId":"playa-slot-template-standard-game_audioSprite","startTime":466000,"duration":652.11,"tags":["SoundEffects"]},
+"s_UiStop":{"spriteId":"UiStop","soundId":"playa-slot-template-standard-game_audioSprite","startTime":468000,"duration":505.62,"tags":["SoundEffects"]},
+"s_UiTutorialClose":{"spriteId":"UiTutorialClose","soundId":"playa-slot-template-standard-game_audioSprite","startTime":470000,"duration":600.59,"tags":["SoundEffects"]}},
 
-        "spriteList": {
-            "sl_SymbolB01Land": {
-                "items": ["s_SymbolB01Land1", "s_SymbolB01Land2", "s_SymbolB01Land3"],
-                "type": "sequential",
-                "overlap": true
-            },
-            "sl_SymbolPreshow": {
-                "items": [
-                    "s_SymbolPreshow1",
-                    "s_SymbolPreshow2",
-                    "s_SymbolPreshow3",
-                    "s_SymbolPreshow4",
-                    "s_SymbolPreshow5"
-                ],
-                "type": "sequential",
-                "overlap": true
-            }
-        },
+"spriteList":
+{"sl_SymbolB01Land":{"items":["s_SymbolB01Land1","s_SymbolB01Land2","s_SymbolB01Land3"],"type":"sequential","overlap":true},
+"sl_SymbolPreshow":{"items":["s_SymbolPreshow1","s_SymbolPreshow2","s_SymbolPreshow3","s_SymbolPreshow4","s_SymbolPreshow5"],"type":"sequential","overlap":true}},
 
-        "commands": {
-            "onGameInit": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BaseMusicLoop",
-                    "delay": 800,
-                    "volume": 1
-                }
-            ],
-            "onInactivityStart": [
-                {
-                    "command": "Fade",
-                    "spriteId": "s_BaseMusicLoop",
-                    "volume": 0,
-                    "delay": 20000,
-                    "duration": 3000
-                },
-                { "command": "Pause", "spriteId": "s_BaseMusicLoop", "delay": 23000 }
-            ],
-            "onIntroStart": [],
-            "onBaseGameStart": [],
-            "onBaseSpinStart": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BaseMusicLoop",
-                    "volume": 1,
-                    "loop": -1
-                },
-                { "command": "Stop", "spriteId": "s_BigWinStart" }
-            ],
-            "onBaseSpinEnd": [
-                {
-                    "command": "Execute",
-                    "commandId": "onInactivityStart",
-                    "delay": 4000
-                }
-            ],
-            "onBigWinStart": [
-                {
-                    "command": "Fade",
-                    "spriteId": "s_BaseMusicLoop",
-                    "volume": 0,
-                    "duration": 100
-                },
-                {
-                    "command": "Fade",
-                    "spriteId": "s_BonusMusicLoop",
-                    "volume": 0,
-                    "duration": 100
-                },
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinStart",
-                    "volume": 1,
-                    "loop": -1,
-                    "cancelDelay": "true"
-                }
-            ],
-            "onBigWinTier1": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinTier1"
-                }
-            ],
-            "onBigWinTier2": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinTier2"
-                }
-            ],
-            "onBigWinTier3": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinTier3"
-                }
-            ],
-            "onBigWinTier4": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinTier4"
-                }
-            ],
-            "onBigWinTier5": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinTier5"
-                }
-            ],
-            "onBigWinEnd": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinEnd"
-                },
-                {
-                    "command": "Stop",
-                    "spriteId": "s_BigWinStart",
-                    "cancelDelay": "true"
-                },
-                {
-                    "command": "Stop",
-                    "spriteId": "s_BigWinTier1",
-                    "cancelDelay": "true"
-                },
-                {
-                    "command": "Stop",
-                    "spriteId": "s_BigWinTier2",
-                    "cancelDelay": "true"
-                },
-                {
-                    "command": "Stop",
-                    "spriteId": "s_BigWinTier3",
-                    "cancelDelay": "true"
-                },
-                {
-                    "command": "Stop",
-                    "spriteId": "s_BigWinTier4",
-                    "cancelDelay": "true"
-                },
-                {
-                    "command": "Fade",
-                    "spriteId": "s_BaseMusicLoop",
-                    "volume": 1,
-                    "duration": 1300
-                },
-                {
-                    "command": "Fade",
-                    "spriteId": "s_BonusMusicLoop",
-                    "volume": 1,
-                    "duration": 1000
-                }
-            ],
-            "onPayline": [{ "command": "", "spriteId": "s_Payline" }],
-            "onReel1Land": [{ "command": "Play", "spriteId": "s_ReelLand1" }],
-            "onReel2Land": [{ "command": "Play", "spriteId": "s_ReelLand2" }],
-            "onReel3Land": [{ "command": "Play", "spriteId": "s_ReelLand3" }],
-            "onReel4Land": [{ "command": "Play", "spriteId": "s_ReelLand4" }],
-            "onReel5Land": [{ "command": "Play", "spriteId": "s_ReelLand5" }],
-            "onRollupLow": [{ "command": "Play", "spriteId": "s_RollupLow" }],
-            "onRollupStart": [{ "command": "Play", "spriteId": "s_Rollup1", "volume": 1, "loop": -1 }],
-            "onRollupEnd": [
-                { "command": "Play", "spriteId": "s_Rollup1End", "volume": 1 },
-                { "command": "Stop", "spriteId": "s_Rollup1", "cancelDelay": "true" }
-            ],
-            "onRollup2Start": [],
-            "onRollup2End": [],
-            "onSymbolAnticipationB01": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_SymbolB01Anticipation",
-                    "volume": 1
-                }
-            ],
-            "onSymbolAnticipationB01End": [
-                {
-                    "command": "",
-                    "spriteId": "s_SymbolB01AnticipationEnd",
-                    "volume": 1
-                },
-                {
-                    "command": "Stop",
-                    "spriteId": "s_SymbolB01Anticipation",
-                    "duration": 400
-                }
-            ],
-            "onSymbolAnticipationF01": [
-                {
-                    "command": "",
-                    "spriteId": "s_SymbolF01Anticipation"
-                }
-            ],
-            "onSymbolAnticipationEndF01": [
-                {
-                    "command": "",
-                    "spriteId": "s_SymbolF01AnticipationEnd"
-                },
-                {
-                    "command": "",
-                    "spriteId": "s_SymbolB01Anticipation"
-                }
-            ],
-            "onSymbolLandB01_1": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_SymbolB01Land1",
-                    "volume": 1
-                }
-            ],
-            "onSymbolLandB01_2": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_SymbolB01Land2",
-                    "volume": 1
-                }
-            ],
-            "onSymbolLandB01_3": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_SymbolB01Land3",
-                    "volume": 1
-                },
-                {
-                    "command": "Play",
-                    "spriteId": "s_PreBonusLoop",
-                    "loop": -1,
-                    "delay": 1000
-                },
-                {
-                    "command": "Stop",
-                    "spriteId": "s_BaseMusicLoop"
-                }
-            ],
-            "onSymbolPreshow": [
-                {
-                    "command": "",
-                    "spriteListId": "sl_SymbolPreshow"
-                },
-                {
-                    "command": "ResetSpriteList",
-                    "spriteListId": "sl_SymbolPreshow",
-                    "delay": 3000
-                }
-            ],
-            "onSymbolTransformW01": [{ "command": "", "spriteId": "s_SymbolW01Transform" }],
-            "onSymbolWinB01": [{ "command": "", "spriteId": "s_SymbolB01" }],
-            "onSymbolWinF01": [{ "command": "", "spriteId": "s_SymbolF01" }],
-            "onSymbolWinS01": [{ "command": "", "spriteId": "s_SymbolS01" }],
-            "onSymbolWinS02": [{ "command": "", "spriteId": "s_SymbolS02" }],
-            "onSymbolWinS03": [{ "command": "", "spriteId": "s_SymbolS03" }],
-            "onSymbolWinS04": [{ "command": "", "spriteId": "s_SymbolS04" }],
-            "onSymbolWinS05": [{ "command": "", "spriteId": "s_SymbolS05" }],
-            "onSymbolWinS06": [{ "command": "", "spriteId": "s_SymbolS06" }],
-            "onSymbolWinS07": [{ "command": "", "spriteId": "s_SymbolS07" }],
-            "onSymbolWinS08": [{ "command": "", "spriteId": "s_SymbolS08" }],
-            "onSymbolWinS09": [{ "command": "", "spriteId": "s_SymbolS09" }],
-            "onSymbolWinS10": [{ "command": "", "spriteId": "s_SymbolS10" }],
-            "onSymbolWinS11": [{ "command": "", "spriteId": "s_SymbolS11" }],
-            "onSymbolWinS12": [{ "command": "", "spriteId": "s_SymbolS12" }],
-            "onSymbolWinS13": [{ "command": "", "spriteId": "s_SymbolS13" }],
-            "onSymbolWinS14": [{ "command": "", "spriteId": "s_SymbolS14" }],
-            "onSymbolWinS15": [{ "command": "", "spriteId": "s_SymbolS15" }],
-            "onSymbolW01": [{ "command": "", "spriteId": "s_SymbolW01" }],
-            "onBaseToBonusStart": [
-                { "command": "Play", "spriteId": "s_BaseToBonusStart" },
-                { "command": "Stop", "spriteId": "s_BaseMusicLoop" }
-            ],
-            "onBonusStart": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BonusMusicLoop",
-                    "loop": -1,
-                    "volume": 1
-                },
-                { "command": "Stop", "spriteId": "s_BaseMusicLoop" },
-                { "command": "Stop", "spriteId": "s_PreBonusLoop" }
-            ],
-            "onBonusSpinStart": [{ "command": "Play", "spriteId": "s_BonusSpinStart" }],
-            "onBonusSpinEnd": [{ "command": "Play", "spriteId": "s_BonusSpinEnd" }],
-            "onBonusRetrigger": [{ "command": "Play", "spriteId": "s_BonusRetrigger" }],
-            "onBonusEnd": [
-                { "command": "Play", "spriteId": "s_BonusMusicLoopEnd" },
-                { "command": "Stop", "spriteId": "s_PickerMusicLoop" },
-                { "command": "Stop", "spriteId": "s_BonusMusicLoop" }
-            ],
-            "onBonusRollupStart": [{ "command": "Play", "spriteId": "s_BonusRollupStart", "loop": -1 }],
-            "onBonusRollupEnd": [
-                { "command": "Play", "spriteId": "s_BonusRollupEnd" },
-                { "command": "Stop", "spriteId": "s_BonusRollupStart" }
-            ],
-            "onBonusRollup2Start": [{ "command": "Play", "spriteId": "s_BonusRollup2Start", "loop": -1 }],
-            "onBonusRollup2End": [
-                { "command": "Play", "spriteId": "s_BonusRollup2End" },
-                { "command": "Stop", "spriteId": "s_BonusRollup2Start" }
-            ],
-            "onBonusSymbolLandB01_1": [{ "command": "Play", "spriteId": "s_SymbolB01Land1" }],
-            "onBonusSymbolLandB01_2": [{ "command": "Play", "spriteId": "s_SymbolB01Land2" }],
-            "onBonusSymbolLandB01_3": [{ "command": "Play", "spriteId": "s_SymbolB01Land3" }],
-            "onBonusSymbolWinS01": [{ "command": "", "spriteId": "s_BonusSymbolS01" }],
-            "onBonusSymbolWinS02": [{ "command": "", "spriteId": "s_BonusSymbolS02" }],
-            "onBonusSymbolWinS03": [{ "command": "", "spriteId": "s_BonusSymbolS03" }],
-            "onBonusSymbolWinS04": [{ "command": "", "spriteId": "s_BonusSymbolS04" }],
-            "onBonusSymbolWinS05": [{ "command": "", "spriteId": "s_BonusSymbolS05" }],
-            "onBonusSymbolWinS06": [{ "command": "", "spriteId": "s_BonusSymbolS06" }],
-            "onBonusSymbolWinS07": [{ "command": "", "spriteId": "s_BonusSymbolS07" }],
-            "onBonusSymbolWinS08": [{ "command": "", "spriteId": "s_BonusSymbolS08" }],
-            "onBonusSymbolWinS09": [{ "command": "", "spriteId": "s_BonusSymbolS09" }],
-            "onBonusSymbolWinS10": [{ "command": "", "spriteId": "s_BonusSymbolS10" }],
-            "onBonusSymbolWinS11": [{ "command": "", "spriteId": "s_BonusSymbolS11" }],
-            "onBonusSymbolWinS12": [{ "command": "", "spriteId": "s_BonusSymbolS12" }],
-            "onBonusSymbolWinS13": [{ "command": "", "spriteId": "s_BonusSymbolS13" }],
-            "onBonusSymbolWinS14": [{ "command": "", "spriteId": "s_BonusSymbolS14" }],
-            "onBonusSymbolWinS15": [{ "command": "", "spriteId": "s_BonusSymbolS15" }],
-            "onBonusToBaseStart": [
-                { "command": "Play", "spriteId": "s_BonusMusicLoopEnd" },
-                { "command": "Stop", "spriteId": "s_PickerMusicLoop" },
-                { "command": "Stop", "spriteId": "s_BonusMusicLoop" }
-            ],
-            "onPickerStart": [
-                { "command": "Play", "spriteId": "s_PickerMusicLoop", "loop": -1 },
-                { "command": "Play", "spriteId": "s_PickerStart" }
-            ],
-            "onPickerSelect": [
-                { "command": "Play", "spriteId": "s_PickerSelect" },
-                { "command": "Stop", "spriteId": "s_PickerMusicLoop" }
-            ],
-            "onTutorialArrowLeft": [{ "command": "Play", "spriteId": "s_UiLeft" }],
-            "onTutorialArrowRight": [{ "command": "Play", "spriteId": "s_UiRight" }],
-            "onTutorialClose": [{ "command": "Play", "spriteId": "s_UiClose" }],
-            "onTutorialDoNotShowAgainOff": [{ "command": "Play", "spriteId": "s_UiOff" }],
-            "onTutorialDoNotShowAgainOn": [{ "command": "Play", "spriteId": "s_UiOn" }],
-            "onUiAutoSpinStop": [{ "command": "Play", "spriteId": "s_UiStop" }],
-            "onUiBetUp": [{ "command": "Play", "spriteId": "s_UiBetUp" }],
-            "onUiBetDown": [{ "command": "Play", "spriteId": "s_UiBetDown" }],
-            "onUiBetMax": [{ "command": "Play", "spriteId": "s_UiBetMax" }],
-            "onUiClick": [{ "command": "Play", "spriteId": "s_UiClick" }],
-            "onUiCloseMessage": [{ "command": "Play", "spriteId": "s_UiClose" }],
-            "onUiConfirmSmall": [{ "command": "Play", "spriteId": "s_UiClickSmall" }],
-            "onUiHelpClose": [{ "command": "Play", "spriteId": "s_UiClose" }],
-            "onUiHelpOpen": [{ "command": "Play", "spriteId": "s_UiOpen" }],
-            "onUiLevelUpScreenClose": [{ "command": "Play", "spriteId": "s_UiClose" }],
-            "onUiLevelUpScreenOpen": [{ "command": "Play", "spriteId": "s_UiOpen" }],
-            "onUiPaytableClose": [{ "command": "Play", "spriteId": "s_UiClose" }],
-            "onUiPaytableOpen": [{ "command": "Play", "spriteId": "s_UiOpen" }],
-            "onUiSkip": [
-                { "command": "Play", "spriteId": "s_UiSkip" },
-                { "command": "Stop", "spriteId": "s_BigWinStart" },
-                { "command": "Stop", "spriteId": "s_Rollup2Start" },
-                { "command": "Stop", "spriteId": "s_BonusRollupStart" },
-                { "command": "Stop", "spriteId": "s_BonusRollup2Start" },
-                { "command": "Stop", "spriteId": "s_Rollup1" }
-            ],
-            "onUiSpin": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_UiSpin"
-                }
-            ],
-            "onUiSettingsAutoSpinInfoClose": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_UiClose"
-                }
-            ],
-            "onUiSettingsAutoSpinInfoOpen": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_UiOpen"
-                }
-            ],
-            "onUiSettingsAutoSpinOptionsClose": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_UiClose"
-                }
-            ],
-            "onUiSettingsAutoSpinOptionsOpen": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_UiOpen"
-                }
-            ],
-            "onUiSettingsAutoSpinReset": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_UiClickSmall"
-                }
-            ],
-            "onUiSettingsAutoSpinStart": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_UiStart"
-                }
-            ],
-            "onUiSettingsClose": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_UiClose"
-                }
-            ],
-            "onUiSettingsOpen": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_UiOpen"
-                }
-            ],
-            "onUiSettingsPage": [{ "command": "Play", "spriteId": "s_UiClick" }],
-            "onUiSettingsSelect": [{ "command": "Play", "spriteId": "s_UiSelect" }],
-            "onUiSpinStop": [{ "command": "Play", "spriteId": "s_UiStop" }],
-            "onUiAutoPlayClose": [{ "command": "Play", "spriteId": "s_UiClose" }],
-            "onUiAutoPlayOpen": [{ "command": "Play", "spriteId": "s_UiOpen" }],
-            "onUiAutoPlaySelect": [{ "command": "Play", "spriteId": "s_UiSelect" }],
-            "onUiOptionsClose": [{ "command": "Play", "spriteId": "s_UiClose" }],
-            "onUiOptionsOpen": [{ "command": "Play", "spriteId": "s_UiOpen" }],
-            "onUiOptionsSelect": [{ "command": "Play", "spriteId": "s_UiSelect" }],
-            "onPreshowStart": [
-                {
-                    "command": "Play",
-                    "spriteListId": "sl_SymbolPreshow"
-                },
-                {
-                    "command": "ResetSpriteList",
-                    "spriteListId": "sl_SymbolPreshow",
-                    "delay": 3000
-                }
-            ],
-            "onBigWinTier1Start": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinTier1"
-                }
-            ],
-            "onBigWinTier2Start": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinTier2"
-                }
-            ],
-            "onBigWinTier3Start": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinTier3"
-                }
-            ],
-            "onBigWinTier4Start": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BigWinTier4"
-                }
-            ],
-            "onBaseGameSpinStart": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BaseMusicLoop",
-                    "volume": 1,
-                    "loop": -1
-                },
-                {
-                    "command": "Play",
-                    "spriteId": "s_BaseSpinStart"
-                },
-                {
-                    "command": "Stop",
-                    "spriteId": "s_BigWinStart"
-                },
-                {
-                    "command": "Execute",
-                    "commandId": "onInactivityStart",
-                    "delay": 4000
-                }
-            ],
-            "onSymbolWinW01": [{ "command": "Play", "spriteId": "s_SymbolW01" }],
-            "onBaseGameSpinEnd": [{ "command": "", "spriteId": "s_BaseSpinEnd" }],
-            "onSymbolWildWin01Transform": [{ "command": "Play", "spriteId": "s_SymbolW01Transform" }],
-            "onBonusAnticipationStart": [{ "command": "Play", "spriteId": "s_SymbolB01Anticipation" }],
-            "onBonusAnticipationEnd": [{ "command": "Play", "spriteId": "s_SymbolB01AnticipationEnd" }],
-            "onAnticipationF01": [{ "command": "Play", "spriteId": "s_SymbolF01Anticipation" }],
-            "onAnticipationF01End": [
-                { "command": "Play", "spriteId": "s_SymbolF01AnticipationEnd" },
-                { "command": "Stop", "spriteId": "s_SymbolB01Anticipation" }
-            ],
-            "onBonusSymbolLand": [
-                { "command": "Play", "spriteListId": "sl_SymbolB01Land" },
-                {
-                    "command": "ResetSpriteList",
-                    "spriteListId": "sl_SymbolB01Land",
-                    "delay": 3000
-                }
-            ],
-            "onBonusSymbolWin": [
-                { "command": "Play", "spriteId": "s_BonusSymbolWin" },
-                { "command": "Stop", "spriteId": "s_BaseMusicLoop" }
-            ],
-            "onBonusGameEnd": [
-                { "command": "Play", "spriteId": "s_BonusMusicLoopEnd" },
-                { "command": "Stop", "spriteId": "s_PickerMusicLoop" },
-                { "command": "Stop", "spriteId": "s_BonusMusicLoop" }
-            ],
-            "onBonusGameSpinStart": [{ "command": "Play", "spriteId": "s_BonusSpinStart" }],
-            "onBonusGameStart": [
-                {
-                    "command": "Play",
-                    "spriteId": "s_BonusMusicLoop",
-                    "loop": -1,
-                    "volume": 1
-                },
-                { "command": "Stop", "spriteId": "s_BaseMusicLoop" },
-                { "command": "Stop", "spriteId": "s_PreBonusLoop" }
-            ],
-            "onBonusRetriggerStart": [{ "command": "Play", "spriteId": "s_BonusRetrigger" }],
-            "onBonusSymbolB01Land": [
-                { "command": "Play", "spriteListId": "sl_SymbolB01Land" },
-                {
-                    "command": "ResetSpriteList",
-                    "spriteListId": "sl_SymbolB01Land",
-                    "delay": 3000
-                }
-            ],
-            "onBigWinTier5Start": [{ "command": "Play", "spriteId": "s_BigWinTier5" }]
-        }
-    }
-}
+"commands":
+{"onBaseGameStart":[{"command":"Play","spriteId":"s_BaseGameStart","volume":1}],
+"onGameInit":[{"command":"Play","spriteId":"s_GameInit","volume":1}],
+"onInactivityStart":[{"command":"Play","spriteId":"s_InactivityStart"},{"command":"Fade","spriteId":"s_BaseMusicLoop","volume":0,"delay":7000,"duration":3000},{"command":"Pause","spriteId":"s_BaseMusicLoop","delay":10000}],
+"onIntroStart":[{"command":"Play","spriteId":"s_IntroStart","volume":1}],
+"onBaseSpinStart":[{"command":"Play","spriteId":"s_BaseMusicLoop","volume":1,"loop":-1},{"command":"Play","spriteId":"s_BaseSpinStart"},{"command":"Stop","spriteId":"s_BigWinStart"}],
+"onBaseSpinEnd":[{"command":"Play","spriteId":"s_BaseSpinEnd"},{"command":"Execute","commandId":"onInactivityStart","delay":4000}],
+"onBigWinStart":[{"command":"Fade","spriteId":"s_BaseMusicLoop","volume":0,"duration":100},{"command":"Fade","spriteId":"s_BonusMusicLoop","volume":0,"duration":100},{"command":"Play","spriteId":"s_BigWinStart","cancelDelay":"true","loop":-1}],
+"onBigWinTier1":[{"command":"Play","spriteId":"s_BigWinTier1"}],
+"onBigWinTier2":[{"command":"Play","spriteId":"s_BigWinTier2"}],
+"onBigWinTier3":[{"command":"Play","spriteId":"s_BigWinTier3"}],
+"onBigWinTier4":[{"command":"Play","spriteId":"s_BigWinTier4"}],
+"onBigWinTier5":[{"command":"Play","spriteId":"s_BigWinTier5"}],
+"onBigWinEnd":[{"command":"Play","spriteId":"s_BigWinEnd"},{"command":"Stop","spriteId":"s_BigWinStart","cancelDelay":"true"},{"command":"Fade","spriteId":"s_BaseMusicLoop","volume":1,"duration":500},{"command":"Fade","spriteId":"s_BonusMusicLoop","volume":1,"duration":500}],
+"onPayline":[{"command":"Play","spriteId":"s_Payline"}],
+"onReel1Land":[{"command":"Play","spriteId":"s_ReelLand","pan":-0.75}],
+"onReel2Land":[{"command":"Play","spriteId":"s_ReelLand","pan":-0.25}],
+"onReel3Land":[{"command":"Play","spriteId":"s_ReelLand","pan":0}],
+"onReel4Land":[{"command":"Play","spriteId":"s_ReelLand","pan":0.25}],
+"onReel5Land":[{"command":"Play","spriteId":"s_ReelLand","pan":0.75}],
+"onRollupLow":[{"command":"Play","spriteId":"s_RollupLow"}],
+"onRollupStart":[{"command":"Play","spriteId":"s_Rollup1","loop":-1}],
+"onRollupEnd":[{"command":"Play","spriteId":"s_Rollup1End"},{"command":"Stop","spriteId":"s_Rollup1","cancelDelay":"true"}],
+"onRollup2Start":[{"command":"Play","spriteId":"s_Rollup2Start","loop":-1}],
+"onRollup2End":[{"command":"Play","spriteId":"s_Rollup2End"},{"command":"Stop","spriteId":"s_Rollup2Start","cancelDelay":"true"}],
+"onSymbolAnticipationB01":[{"command":"Play","spriteId":"s_SymbolB01Anticipation"}],
+"onSymbolAnticipationB01End":[{"command":"Play","spriteId":"s_SymbolB01AnticipationEnd"}],
+"onSymbolAnticipationF01":[{"command":"Play","spriteId":"s_SymbolF01Anticipation"}],
+"onSymbolAnticipationEndF01":[{"command":"Play","spriteId":"s_SymbolF01AnticipationEnd"},{"command":"Stop","spriteId":"s_SymbolB01Anticipation"}],
+"onSymbolLandB01_1":[{"command":"Play","spriteId":"s_SymbolB01Land1"}],
+"onSymbolLandB01_2":[{"command":"Play","spriteId":"s_SymbolB01Land2"},{"command":"Play","spriteId":"s_SymbolB01Anticipation"}],
+"onSymbolLandB01_3":[{"command":"Play","spriteId":"s_SymbolB01Land3"},{"command":"Play","spriteId":"s_PreBonusLoop","loop":-1,"delay":1000},{"command":"Stop","spriteId":"s_BaseMusicLoop"}],
+"onSymbolPreshow":[{"command":"Play","spriteListId":"sl_SymbolPreshow"},{"command":"ResetSpriteList","spriteListId":"sl_SymbolPreshow","delay":3000}],
+"onSymbolTransformW01":[{"command":"Play","spriteId":"s_SymbolW01Transform"}],
+"onSymbolWinB01":[{"command":"Play","spriteId":"s_SymbolB01"}],
+"onSymbolWinF01":[{"command":"Play","spriteId":"s_SymbolF01"}],
+"onSymbolWinS01":[{"command":"Play","spriteId":"s_SymbolS01"}],
+"onSymbolWinS02":[{"command":"Play","spriteId":"s_SymbolS02"}],
+"onSymbolWinS03":[{"command":"Play","spriteId":"s_SymbolS03"}],
+"onSymbolWinS04":[{"command":"Play","spriteId":"s_SymbolS04"}],
+"onSymbolWinS05":[{"command":"Play","spriteId":"s_SymbolS05"}],
+"onSymbolWinS06":[{"command":"Play","spriteId":"s_SymbolS06"}],
+"onSymbolWinS07":[{"command":"Play","spriteId":"s_SymbolS07"}],
+"onSymbolWinS08":[{"command":"Play","spriteId":"s_SymbolS08"}],
+"onSymbolWinS09":[{"command":"Play","spriteId":"s_SymbolS09"}],
+"onSymbolWinS10":[{"command":"Play","spriteId":"s_SymbolS10"}],
+"onSymbolWinS11":[{"command":"Play","spriteId":"s_SymbolS11"}],
+"onSymbolWinS12":[{"command":"Play","spriteId":"s_SymbolS12"}],
+"onSymbolWinS13":[{"command":"Play","spriteId":"s_SymbolS13"}],
+"onSymbolWinS14":[{"command":"Play","spriteId":"s_SymbolS14"}],
+"onSymbolWinS15":[{"command":"Play","spriteId":"s_SymbolS15"}],
+"onSymbolW01":[{"command":"Play","spriteId":"s_SymbolW01"}],
+"onBaseToBonusStart":[{"command":"Play","spriteId":"s_BaseToBonusStart"},{"command":"Stop","spriteId":"s_BaseMusicLoop"}],
+"onBonusStart":[{"command":"Play","spriteId":"s_BonusMusicLoop","loop":-1,"volume":1},{"command":"Stop","spriteId":"s_BaseMusicLoop"},{"command":"Stop","spriteId":"s_PreBonusLoop"}],
+"onBonusSpinStart":[{"command":"Play","spriteId":"s_BonusSpinStart"}],
+"onBonusSpinEnd":[{"command":"Play","spriteId":"s_BonusSpinEnd"}],
+"onBonusRetrigger":[{"command":"Play","spriteId":"s_BonusRetrigger"}],
+"onBonusEnd":[{"command":"Play","spriteId":"s_BonusMusicLoopEnd"},{"command":"Stop","spriteId":"s_PickerMusicLoop"},{"command":"Stop","spriteId":"s_BonusMusicLoop"}],
+"onBonusRollupStart":[{"command":"Play","spriteId":"s_BonusRollupStart","loop":-1}],
+"onBonusRollupEnd":[{"command":"Play","spriteId":"s_BonusRollupEnd"},{"command":"Stop","spriteId":"s_BonusRollupStart"}],
+"onBonusRollup2Start":[{"command":"Play","spriteId":"s_BonusRollup2Start","loop":-1}],
+"onBonusRollup2End":[{"command":"Play","spriteId":"s_BonusRollup2End"},{"command":"Stop","spriteId":"s_BonusRollup2Start"}],
+"onBonusSymbolLandB01_1":[{"command":"Play","spriteId":"s_SymbolB01Land1"}],
+"onBonusSymbolLandB01_2":[{"command":"Play","spriteId":"s_SymbolB01Land2"}],
+"onBonusSymbolLandB01_3":[{"command":"Play","spriteId":"s_SymbolB01Land3"}],
+"onBonusSymbolWinS01":[{"command":"Play","spriteId":"s_BonusSymbolS01"}],
+"onBonusSymbolWinS02":[{"command":"Play","spriteId":"s_BonusSymbolS02"}],
+"onBonusSymbolWinS03":[{"command":"Play","spriteId":"s_BonusSymbolS03"}],
+"onBonusSymbolWinS04":[{"command":"Play","spriteId":"s_BonusSymbolS04"}],
+"onBonusSymbolWinS05":[{"command":"Play","spriteId":"s_BonusSymbolS05"}],
+"onBonusSymbolWinS06":[{"command":"Play","spriteId":"s_BonusSymbolS06"}],
+"onBonusSymbolWinS07":[{"command":"Play","spriteId":"s_BonusSymbolS07"}],
+"onBonusSymbolWinS08":[{"command":"Play","spriteId":"s_BonusSymbolS08"}],
+"onBonusSymbolWinS09":[{"command":"Play","spriteId":"s_BonusSymbolS09"}],
+"onBonusSymbolWinS10":[{"command":"Play","spriteId":"s_BonusSymbolS10"}],
+"onBonusSymbolWinS11":[{"command":"Play","spriteId":"s_BonusSymbolS11"}],
+"onBonusSymbolWinS12":[{"command":"Play","spriteId":"s_BonusSymbolS12"}],
+"onBonusSymbolWinS13":[{"command":"Play","spriteId":"s_BonusSymbolS13"}],
+"onBonusSymbolWinS14":[{"command":"Play","spriteId":"s_BonusSymbolS14"}],
+"onBonusSymbolWinS15":[{"command":"Play","spriteId":"s_BonusSymbolS15"}],
+"onBonusToBaseStart":[{"command":"Play","spriteId":"s_BonusMusicLoopEnd"},{"command":"Stop","spriteId":"s_PickerMusicLoop"},{"command":"Stop","spriteId":"s_BonusMusicLoop"}],
+"onPickerStart":[{"command":"Play","spriteId":"s_PickerMusicLoop","loop":-1},{"command":"Play","spriteId":"s_PickerStart"}],
+"onPickerSelect":[{"command":"Play","spriteId":"s_PickerSelect"},{"command":"Stop","spriteId":"s_PickerMusicLoop"}],
+"onTutorialArrowLeft":[{"command":"Play","spriteId":"s_UiLeft"}],
+"onTutorialArrowRight":[{"command":"Play","spriteId":"s_UiRight"}],
+"onTutorialClose":[{"command":"Play","spriteId":"s_UiClose"}],
+"onTutorialDoNotShowAgainOff":[{"command":"Play","spriteId":"s_UiOff"}],
+"onTutorialDoNotShowAgainOn":[{"command":"Play","spriteId":"s_UiOn"}],
+"onUiAutoSpinStop":[{"command":"Play","spriteId":"s_UiStop"}],
+"onUiBetUp":[{"command":"Play","spriteId":"s_UiBetUp"}],
+"onUiBetDown":[{"command":"Play","spriteId":"s_UiBetDown"}],
+"onUiBetMax":[{"command":"Play","spriteId":"s_UiBetMax"}],
+"onUiClick":[{"command":"Play","spriteId":"s_UiClick"}],
+"onUiCloseMessage":[{"command":"Play","spriteId":"s_UiClose"}],
+"onUiConfirmSmall":[{"command":"Play","spriteId":"s_UiClickSmall"}],
+"onUiHelpClose":[{"command":"Play","spriteId":"s_UiClose"}],
+"onUiHelpOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
+"onUiLevelUpScreenClose":[{"command":"Play","spriteId":"s_UiClose"}],
+"onUiLevelUpScreenOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
+"onUiPaytableClose":[{"command":"Play","spriteId":"s_UiClose"}],
+"onUiPaytableOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
+"onUiSkip":[{"command":"Play","spriteId":"s_UiSkip"},{"command":"Stop","spriteId":"s_BigWinStart"},{"command":"Stop","spriteId":"s_Rollup2Start"},{"command":"Stop","spriteId":"s_BonusRollupStart"},{"command":"Stop","spriteId":"s_BonusRollup2Start"},{"command":"Stop","spriteId":"s_Rollup1"}],
+"onUiSpin":[{"command":"Play","spriteId":"s_UiSpin"}],
+"onUiSettingsAutoSpinInfoClose":[{"command":"Play","spriteId":"s_UiClose"}],
+"onUiSettingsAutoSpinInfoOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
+"onUiSettingsAutoSpinOptionsClose":[{"command":"Play","spriteId":"s_UiClose"}],
+"onUiSettingsAutoSpinOptionsOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
+"onUiSettingsAutoSpinReset":[{"command":"Play","spriteId":"s_UiClickSmall"}],
+"onUiSettingsAutoSpinStart":[{"command":"Play","spriteId":"s_UiStart"}],
+"onUiSettingsClose":[{"command":"Play","spriteId":"s_UiClose"}],
+"onUiSettingsOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
+"onUiSettingsPage":[{"command":"Play","spriteId":"s_UiClick"}],
+"onUiSettingsSelect":[{"command":"Play","spriteId":"s_UiSelect"}],
+"onUiSpinStop":[{"command":"Play","spriteId":"s_UiStop"}],
+"onUiAutoPlayClose":[{"command":"Play","spriteId":"s_UiClose"}],
+"onUiAutoPlayOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
+"onUiAutoPlaySelect":[{"command":"Play","spriteId":"s_UiSelect"}],
+"onUiOptionsClose":[{"command":"Play","spriteId":"s_UiClose"}],
+"onUiOptionsOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
+"onUiOptionsSelect":[{"command":"Play","spriteId":"s_UiSelect"}],
+"onPreshowStart":[{"command":"Play","spriteListId":"sl_SymbolPreshow"},{"command":"ResetSpriteList","spriteListId":"sl_SymbolPreshow","delay":3000}],
+"onBigWinTier1Start":[{"command":"Play","spriteId":"s_BigWinTier1"}],
+"onBigWinTier2Start":[{"command":"Play","spriteId":"s_BigWinTier2"}],
+"onBigWinTier3Start":[{"command":"Play","spriteId":"s_BigWinTier3"}],
+"onBigWinTier4Start":[{"command":"Play","spriteId":"s_BigWinTier4"}],
+"onBaseGameSpinStart":[{"command":"Play","spriteId":"s_BaseMusicLoop","volume":1,"loop":-1},{"command":"Play","spriteId":"s_BaseSpinStart"},{"command":"Stop","spriteId":"s_BigWinStart"},{"command":"Execute","commandId":"onInactivityStart","delay":4000}],
+"onSymbolWinW01":[{"command":"Play","spriteId":"s_SymbolW01"}],
+"onBaseGameSpinEnd":[{"command":"Play","spriteId":"s_BaseSpinEnd"}],
+"onSymbolWildWin01Transform":[{"command":"Play","spriteId":"s_SymbolW01Transform"}],
+"onBonusAnticipationStart":[{"command":"Play","spriteId":"s_SymbolB01Anticipation"}],
+"onBonusAnticipationEnd":[{"command":"Play","spriteId":"s_SymbolB01AnticipationEnd"}],
+"onAnticipationF01":[{"command":"Play","spriteId":"s_SymbolF01Anticipation"}],
+"onAnticipationF01End":[{"command":"Play","spriteId":"s_SymbolF01AnticipationEnd"},{"command":"Stop","spriteId":"s_SymbolB01Anticipation"}],
+"onBonusSymbolLand":[{"command":"Play","spriteListId":"sl_SymbolB01Land"},{"command":"ResetSpriteList","spriteListId":"sl_SymbolB01Land","delay":3000}],
+"onBonusSymbolWin":[{"command":"Play","spriteId":"s_BonusSymbolWin"},{"command":"Stop","spriteId":"s_BaseMusicLoop"}],
+"onBonusGameEnd":[{"command":"Play","spriteId":"s_BonusMusicLoopEnd"},{"command":"Stop","spriteId":"s_PickerMusicLoop"},{"command":"Stop","spriteId":"s_BonusMusicLoop"}],
+"onBonusGameSpinStart":[{"command":"Play","spriteId":"s_BonusSpinStart"}],
+"onBonusGameStart":[{"command":"Play","spriteId":"s_BonusMusicLoop","loop":-1,"volume":1},{"command":"Stop","spriteId":"s_BaseMusicLoop"},{"command":"Stop","spriteId":"s_PreBonusLoop"}],
+"onBonusRetriggerStart":[{"command":"Play","spriteId":"s_BonusRetrigger"}],
+"onBonusSymbolB01Land":[{"command":"Play","spriteListId":"sl_SymbolB01Land"},{"command":"ResetSpriteList","spriteListId":"sl_SymbolB01Land","delay":3000}],
+"onBigWinTier5Start":[{"command":"Play","spriteId":"s_BigWinTier5"}]}}}
