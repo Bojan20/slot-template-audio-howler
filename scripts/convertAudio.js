@@ -33,7 +33,7 @@ for (let i = 0; i < audioFiles.length; i++) {
         }
     }
 
-    audiosprite(pathToFFmpeg, [audioFiles[i]], opts, function(err, obj) {
+    audiosprite(pathToFFmpeg, [audioFiles[i]], opts, 0, function(err, obj) {
 
     });
 }

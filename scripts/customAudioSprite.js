@@ -28,7 +28,7 @@ const defaults = {
     }
 }
 
-module.exports = function(ffmpegPath, files, opts, callback) {
+module.exports = function(ffmpegPath, files, opts, fileNumber, callback) {
     /*let opts = {}, callback = function(){}
   
     if (arguments.length === 2) {
@@ -50,7 +50,14 @@ module.exports = function(ffmpegPath, files, opts, callback) {
     opts = _.extend({}, defaults, opts)
 
     // make sure output directory exists
-    const outputDir = path.dirname(opts.output)
+    let outputDir;
+    if(fileNumber > 0) {
+        outputDir = path.dirname(opts.output+fileNumber);
+    }
+    else {
+        outputDir = path.dirname(opts.output);
+    }
+    
     if (!fs.existsSync(outputDir)) {
         require('mkdirp').sync(outputDir)
     }
@@ -314,7 +321,12 @@ module.exports = function(ffmpegPath, files, opts, callback) {
 
             async.forEachSeries(Object.keys(formats), function(ext, cb) {
                 opts.logger.debug('Start export', { format: ext })
-                exportFile(tempFile, opts.output, ext, formats[ext], true, cb)
+                if(fileNumber>0) {
+                    exportFile(tempFile, opts.output+fileNumber, ext, formats[ext], true, cb);
+                } else {
+                    exportFile(tempFile, opts.output, ext, formats[ext], true, cb);
+                }
+                
             }, function(err) {
                 if (err) {
                     return callback(new Error('Error exporting file'))
