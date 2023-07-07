@@ -118,10 +118,10 @@
 
 "commands":
 {"onBaseGameStart":[{"command":"Play","spriteId":"s_BaseGameStart","volume":1}],
-"onGameInit":[{"command":"Play","spriteId":"s_GameInit","volume":1}],
+"onGameInit":[{"command":"Play","spriteId":"s_GameInit","volume":1},{"command":"Set","spriteId":"s_BaseMusicLoop","volume":1}],
 "onInactivityStart":[{"command":"Play","spriteId":"s_InactivityStart"},{"command":"Fade","spriteId":"s_BaseMusicLoop","volume":0,"delay":7000,"duration":3000},{"command":"Pause","spriteId":"s_BaseMusicLoop","delay":10000}],
 "onIntroStart":[{"command":"Play","spriteId":"s_IntroStart","volume":1}],
-"onBaseSpinStart":[{"command":"Play","spriteId":"s_BaseMusicLoop","volume":1,"loop":-1},{"command":"Play","spriteId":"s_BaseSpinStart"},{"command":"Stop","spriteId":"s_BigWinStart"}],
+"onBaseSpinStart":[{"command":"Play","spriteId":"s_BaseMusicLoop","volume":1,"loop":-1},{"command":"Fade","spriteId":"s_BaseMusicLoop","volume":1,"duration":100,"delay":50},{"command":"Play","spriteId":"s_BaseSpinStart"},{"command":"Stop","spriteId":"s_BigWinStart"}],
 "onBaseSpinEnd":[{"command":"Play","spriteId":"s_BaseSpinEnd"},{"command":"Execute","commandId":"onInactivityStart","delay":4000}],
 "onBigWinStart":[{"command":"Fade","spriteId":"s_BaseMusicLoop","volume":0,"duration":100},{"command":"Fade","spriteId":"s_BonusMusicLoop","volume":0,"duration":100},{"command":"Play","spriteId":"s_BigWinStart","cancelDelay":"true","loop":-1}],
 "onBigWinTier1":[{"command":"Play","spriteId":"s_BigWinTier1"}],
