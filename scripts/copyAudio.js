@@ -24,10 +24,6 @@ function copyDirectory(path) {
             console.log("process " + element);
             destPath = gameProjectPath + "/assets/default/default/default/sounds/soundFiles/";
 
-            if(gameProjectPath + "/assets/default/default/default/sounds/") {
-                fs.rmSync(gameProjectPath + "/assets/default/default/default/sounds/", { recursive: true });
-            }
-
             if (destPath) {
                 console.log("copy from " + filePath + " to " + destPath + element);
                 if (!fs.existsSync(destPath)) {
@@ -47,16 +43,19 @@ function copySoundConfigToGame(path) {
 
     } else {
         let filePath = path + "/sounds.json";
-        let destPath = gameProjectPath + "/assets/default/default/default/sounds";
+        let destPath = gameProjectPath + "/assets/default/default/default/sounds/";
         if (fs.existsSync(destPath + "/sounds.json")) {
             fs.rmSync(destPath + "/sounds.json", { recursive: true });
         }else if(fs.existsSync(destPath + "/sounds.json5")) {
             fs.rmSync(destPath + "/sounds.json5", { recursive: true });
         }
         if (!fs.existsSync(destPath)) {
+            console.log( " make dest folder");
             fs.mkdirSync(destPath, { recursive: true });
         }
-        fs.copyFileSync(filePath, destPath + "/sounds.json");
+        let destSoundJsonPath = destPath + "/sounds.json";
+        console.log(" File Path = " + filePath + " Destination path = > " + destPath + "/sounds.json") 
+        fs.copyFileSync(filePath, destSoundJsonPath);
     }
     if (!fs.existsSync(path + "/sounds.json5")) {
         console.log(path + "/sounds.json5 is missing from dist folder, skipping");
@@ -95,6 +94,9 @@ if (audio !== "") {
     if (!fs.existsSync(gameProjectPath + "/assets")) {
         console.log("Game Path " + gameProjectPath + "/assets" + " missing, skipping...");
     } else {
+        if(gameProjectPath + "/assets/default/default/default/sounds/") {
+            fs.rmSync(gameProjectPath + "/assets/default/default/default/sounds/", { recursive: true });
+        }
         copySoundConfigToGame(distFolder);
         copySoundsToGame(distSoundFolder);
     }
