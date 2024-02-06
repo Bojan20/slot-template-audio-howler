@@ -51,6 +51,8 @@ yarn build-audioSprite  (make one large audiosprite with all the sounds)
 
 yarn build-audioSprite  (make one large audiosprite with all the sounds)
 
+yarn build-audioSprites-size (use this to create audioSprites automatically with sizes less than 1.5MB )
+
 yarn build-multi-audioSprites (use this so that the individual audiosprites are not over 4MB )
 
 This command will pick up all input sourceSoundFiles folder's wav files and combine them to create audioSprite with different possible soundFormats ogg, mp4, aac, wav. Currently its set to publish m4a audioSprites. This file get exported and published to 'dist -> soundFiles -> SlotTemplateAudioSprite_SL.m4a'
@@ -60,5 +62,7 @@ Then it will generate sounds.json file based on soundData.json and sounds.json (
 After this step soundData.json is auto deleted.
 
 Sound Engineer can copy soundFiles folder and sounds.json file from dist folder and directly copy paste this into the game. 
+
+
 
 
