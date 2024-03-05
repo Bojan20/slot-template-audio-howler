@@ -35,6 +35,9 @@ function createFileChunks() {
         totalFileSize = totalFileSize + fileSize;
         console.log(" file names => " + audioFiles[count] + " file sizes =>  " + fileSize + " totalFileSize =>  "+ totalFileSize);
         if(totalFileSize >= 30) {
+            if(count === 0) {
+                count = 1;
+            }
             audioArrays.push(audioFiles.splice(0, count));
             //console.log (" Audio Array =>  " + audioArrays + "audioArrays.length =>" + audioArrays.length);
             count = 0;
