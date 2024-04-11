@@ -97,7 +97,8 @@
 "s_UiOpen":{"soundId":"playa-slot-template-standard-game_audioSprite3","startTime":144000,"duration":484.2,"overlap":true,"spriteId":"UiOpen","tags":["SoundEffects"]},
 "s_UiSelect":{"soundId":"playa-slot-template-standard-game_audioSprite3","startTime":146000,"duration":474.76,"overlap":true,"spriteId":"UiSelect","tags":["SoundEffects"]},
 "s_UiSkip":{"soundId":"playa-slot-template-standard-game_audioSprite3","startTime":148000,"duration":1486.08,"overlap":true,"spriteId":"UiSkip","tags":["SoundEffects"]},
-"s_UiSpin":{"soundId":"playa-slot-template-standard-game_audioSprite3","startTime":151000,"duration":1608.53,"overlap":true,"spriteId":"UiSpin","tags":["SoundEffects"]}},
+"s_UiSpin":{"soundId":"playa-slot-template-standard-game_audioSprite3","startTime":151000,"duration":900,"overlap":true,"spriteId":"UiSpin","tags":["SoundEffects"]},
+"s_UiSpinSlam":{"soundId":"playa-slot-template-standard-game_audioSprite3","spriteId":"UiSpinSlam","startTime":153000,"duration":900,"tags":["SoundEffects"]}},
 
 "spriteList":
 {"sl_SymbolPreshow":{"items":["s_SymbolPreshow1","s_SymbolPreshow2","s_SymbolPreshow3","s_SymbolPreshow4","s_SymbolPreshow5"],"type":"sequential","overlap":true}},
