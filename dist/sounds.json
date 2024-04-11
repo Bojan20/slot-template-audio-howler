@@ -211,7 +211,7 @@
 "onUiPaytableOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
 "onUiSkip":[{"command":"Play","spriteId":"s_UiSkip"},{"command":"Stop","spriteId":"s_BigWinStart"},{"command":"Stop","spriteId":"s_Rollup2Start"},{"command":"Stop","spriteId":"s_BonusRollupStart"},{"command":"Stop","spriteId":"s_BonusRollup2Start"},{"command":"Stop","spriteId":"s_Rollup1"}],
 "onUiSpin":[{"command":"Play","spriteId":"s_UiSpin"}],
-"onUiSpinSlam":[{"command":"Play","spriteId":"s_UiSkip","delay":10},{"command":"Stop","spriteId":"s_SymbolB01Anticipation"},{"command":"Stop","spriteId":"s_SymbolB02Land2"}],
+"onUiSpinSlam":[{"command":"Play","spriteId":"s_UiSpinSlam","delay":10},{"command":"Stop","spriteId":"s_SymbolB01Anticipation"},{"command":"Stop","spriteId":"s_SymbolB02Land2"}],
 "onUiAutoPlayClose":[{"command":"Play","spriteId":"s_UiClose"}],
 "onUiAutoPlayOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
 "onUiAutoPlaySelect":[{"command":"Play","spriteId":"s_UiSelect"}],
