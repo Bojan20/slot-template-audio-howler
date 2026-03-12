@@ -97,7 +97,7 @@
 "s_UiOpen":{"soundId":"playa-slot-template-standard-game_audioSprite3","startTime":144000,"duration":484.2,"overlap":true,"spriteId":"UiOpen","tags":["SoundEffects"]},
 "s_UiSelect":{"soundId":"playa-slot-template-standard-game_audioSprite3","startTime":146000,"duration":474.76,"overlap":true,"spriteId":"UiSelect","tags":["SoundEffects"]},
 "s_UiSkip":{"soundId":"playa-slot-template-standard-game_audioSprite3","startTime":148000,"duration":1486.08,"overlap":true,"spriteId":"UiSkip","tags":["SoundEffects"]},
-"s_UiSpin":{"soundId":"playa-slot-template-standard-game_audioSprite3","startTime":151000,"duration":1608.53,"overlap":true,"spriteId":"UiSpin","tags":["SoundEffects"]}},
+"s_UiSpin":{"soundId":"playa-slot-template-standard-game_audioSprite3","startTime":151000,"duration":1608.53,"overlap":true,"spriteId":"UiSpin","tags":["SoundEffects"]},
 "s_UiSpinSlam":{"soundId":"playa-slot-template-standard-game_audioSprite3","spriteId":"UiSpinSlam","startTime":153000,"duration":900,"tags":["SoundEffects"]}},
 
 "spriteList":
@@ -211,7 +211,7 @@
 "onUiPaytableOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
 "onUiSkip":[{"command":"Play","spriteId":"s_UiSkip"},{"command":"Stop","spriteId":"s_BigWinStart"},{"command":"Stop","spriteId":"s_Rollup2Start"},{"command":"Stop","spriteId":"s_BonusRollupStart"},{"command":"Stop","spriteId":"s_BonusRollup2Start"},{"command":"Stop","spriteId":"s_Rollup1"}],
 "onUiSpin":[{"command":"Play","spriteId":"s_UiSpin"}],
-"onUiSpinSlam":[{"command":"Play","spriteId":"s_UiSpinSlam","delay":10},{"command":"Stop","spriteId":"s_SymbolB01Anticipation"},{"command":"Stop","spriteId":"s_SymbolB02Land2"}],
+"onUiSpinSlam":[{"command":"Play","spriteId":"s_UiSpinSlam","delay":10},{"command":"Stop","spriteId":"s_SymbolB01Anticipation"},{"command":"Stop","spriteId":"s_SymbolB01Land2"}],
 "onUiAutoPlayClose":[{"command":"Play","spriteId":"s_UiClose"}],
 "onUiAutoPlayOpen":[{"command":"Play","spriteId":"s_UiOpen"}],
 "onUiAutoPlaySelect":[{"command":"Play","spriteId":"s_UiSelect"}],

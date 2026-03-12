@@ -172,12 +172,10 @@ module.exports = function(ffmpegPath, files, opts, fileNumber, callback) {
             }
             offsetCursor += originalDuration
 
-            var delta = Math.ceil(duration) - duration;
+            var delta = 0;
 
-            if (opts.ignorerounding) {
-                opts.logger.info('Ignoring nearest second silence gap rounding');
-                extraDuration = 0;
-                delta = 0;
+            if (!opts.ignorerounding && opts.gap >= 1) {
+                delta = Math.ceil(duration) - duration;
             }
 
             appendSilence(extraDuration + delta + opts.gap, dest, cb)
@@ -186,7 +184,7 @@ module.exports = function(ffmpegPath, files, opts, fileNumber, callback) {
     }
 
     function appendSilence(duration, dest, cb) {
-        var buffer = new Buffer(Math.round(opts.samplerate * 2 * opts.channels * duration))
+        var buffer = Buffer.alloc(Math.round(opts.samplerate * 2 * opts.channels * duration))
         buffer.fill(0)
         var writeStream = fs.createWriteStream(dest, { flags: 'a' })
         writeStream.end(buffer)
